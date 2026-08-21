@@ -1,0 +1,1181 @@
+{
+  "video": {
+    "path": "../upload/20143.mp4",
+    "width": 1584,
+    "height": 720,
+    "fps": 30.0,
+    "duration_s": 14.799
+  },
+  "sample_fps": 4.0,
+  "event_counts": {
+    "blue_ring_candidate": 15,
+    "red_ring_candidate": 15,
+    "skill_2_visual_change": 13,
+    "skill_1_visual_change": 33,
+    "impact_or_damage_flash": 12,
+    "summon_or_secret_visual_change": 23,
+    "substitution_visual_change": 11,
+    "health_bar_change": 3
+  },
+  "events": [
+    {
+      "timestamp_s": 0.0,
+      "event": "blue_ring_candidate",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.631856073229584,
+        "arena_y": 0.694106902000199
+      }
+    },
+    {
+      "timestamp_s": 0.0,
+      "event": "red_ring_candidate",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.6180871345246184,
+        "arena_y": 0.5840687002254201
+      }
+    },
+    {
+      "timestamp_s": 0.75,
+      "event": "skill_2_visual_change",
+      "score": 30.040635400061525,
+      "source": "skill_2",
+      "evidence": {
+        "mean_pixel_delta": 30.040635400061525
+      }
+    },
+    {
+      "timestamp_s": 1.0,
+      "event": "skill_1_visual_change",
+      "score": 40.43391547120497,
+      "source": "skill_1",
+      "evidence": {
+        "mean_pixel_delta": 40.43391547120497
+      }
+    },
+    {
+      "timestamp_s": 1.0,
+      "event": "skill_2_visual_change",
+      "score": 31.796431467964315,
+      "source": "skill_2",
+      "evidence": {
+        "mean_pixel_delta": 31.796431467964315
+      }
+    },
+    {
+      "timestamp_s": 1.0,
+      "event": "blue_ring_candidate",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.6594708523019104,
+        "arena_y": 0.7178927544045216
+      }
+    },
+    {
+      "timestamp_s": 1.0,
+      "event": "red_ring_candidate",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.5276382797316174,
+        "arena_y": 0.5916113148662203
+      }
+    },
+    {
+      "timestamp_s": 1.25,
+      "event": "skill_1_visual_change",
+      "score": 45.1495589414595,
+      "source": "skill_1",
+      "evidence": {
+        "mean_pixel_delta": 45.1495589414595
+      }
+    },
+    {
+      "timestamp_s": 1.25,
+      "event": "impact_or_damage_flash",
+      "score": 36.07993722664904,
+      "source": "impact_area",
+      "evidence": {
+        "mean_pixel_delta": 36.07993722664904
+      }
+    },
+    {
+      "timestamp_s": 1.5,
+      "event": "skill_1_visual_change",
+      "score": 53.82911580385518,
+      "source": "skill_1",
+      "evidence": {
+        "mean_pixel_delta": 53.82911580385518
+      }
+    },
+    {
+      "timestamp_s": 1.5,
+      "event": "impact_or_damage_flash",
+      "score": 37.2900810252474,
+      "source": "impact_area",
+      "evidence": {
+        "mean_pixel_delta": 37.2900810252474
+      }
+    },
+    {
+      "timestamp_s": 1.75,
+      "event": "skill_1_visual_change",
+      "score": 39.004306632213606,
+      "source": "skill_1",
+      "evidence": {
+        "mean_pixel_delta": 39.004306632213606
+      }
+    },
+    {
+      "timestamp_s": 1.75,
+      "event": "skill_2_visual_change",
+      "score": 29.542984590429846,
+      "source": "skill_2",
+      "evidence": {
+        "mean_pixel_delta": 29.542984590429846
+      }
+    },
+    {
+      "timestamp_s": 2.0,
+      "event": "skill_1_visual_change",
+      "score": 29.63203540348689,
+      "source": "skill_1",
+      "evidence": {
+        "mean_pixel_delta": 29.63203540348689
+      }
+    },
+    {
+      "timestamp_s": 2.0,
+      "event": "blue_ring_candidate",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.566778904601175,
+        "arena_y": 0.7589804688227711
+      }
+    },
+    {
+      "timestamp_s": 2.0,
+      "event": "red_ring_candidate",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.5391437756935543,
+        "arena_y": 0.5569231682754276
+      }
+    },
+    {
+      "timestamp_s": 2.25,
+      "event": "skill_1_visual_change",
+      "score": 30.02780005346164,
+      "source": "skill_1",
+      "evidence": {
+        "mean_pixel_delta": 30.02780005346164
+      }
+    },
+    {
+      "timestamp_s": 2.25,
+      "event": "summon_or_secret_visual_change",
+      "score": 30.763858577040594,
+      "source": "summon_or_secret",
+      "evidence": {
+        "mean_pixel_delta": 30.763858577040594
+      }
+    },
+    {
+      "timestamp_s": 2.5,
+      "event": "skill_1_visual_change",
+      "score": 34.21588107754908,
+      "source": "skill_1",
+      "evidence": {
+        "mean_pixel_delta": 34.21588107754908
+      }
+    },
+    {
+      "timestamp_s": 2.75,
+      "event": "skill_1_visual_change",
+      "score": 45.16296890314533,
+      "source": "skill_1",
+      "evidence": {
+        "mean_pixel_delta": 45.16296890314533
+      }
+    },
+    {
+      "timestamp_s": 3.0,
+      "event": "skill_1_visual_change",
+      "score": 46.85749502509727,
+      "source": "skill_1",
+      "evidence": {
+        "mean_pixel_delta": 46.85749502509727
+      }
+    },
+    {
+      "timestamp_s": 3.0,
+      "event": "summon_or_secret_visual_change",
+      "score": 36.81594645715117,
+      "source": "summon_or_secret",
+      "evidence": {
+        "mean_pixel_delta": 36.81594645715117
+      }
+    },
+    {
+      "timestamp_s": 3.0,
+      "event": "blue_ring_candidate",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.8814254124004551,
+        "arena_y": 0.7945473527218494
+      }
+    },
+    {
+      "timestamp_s": 3.0,
+      "event": "red_ring_candidate",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.5908982548793074,
+        "arena_y": 0.576199229588191
+      }
+    },
+    {
+      "timestamp_s": 3.25,
+      "event": "skill_1_visual_change",
+      "score": 57.2060055243696,
+      "source": "skill_1",
+      "evidence": {
+        "mean_pixel_delta": 57.2060055243696
+      }
+    },
+    {
+      "timestamp_s": 3.25,
+      "event": "substitution_visual_change",
+      "score": 29.027114647804304,
+      "source": "substitution",
+      "evidence": {
+        "mean_pixel_delta": 29.027114647804304
+      }
+    },
+    {
+      "timestamp_s": 3.25,
+      "event": "summon_or_secret_visual_change",
+      "score": 34.28748363160192,
+      "source": "summon_or_secret",
+      "evidence": {
+        "mean_pixel_delta": 34.28748363160192
+      }
+    },
+    {
+      "timestamp_s": 3.5,
+      "event": "skill_1_visual_change",
+      "score": 48.70989634381775,
+      "source": "skill_1",
+      "evidence": {
+        "mean_pixel_delta": 48.70989634381775
+      }
+    },
+    {
+      "timestamp_s": 3.5,
+      "event": "skill_2_visual_change",
+      "score": 30.752034566658278,
+      "source": "skill_2",
+      "evidence": {
+        "mean_pixel_delta": 30.752034566658278
+      }
+    },
+    {
+      "timestamp_s": 3.5,
+      "event": "summon_or_secret_visual_change",
+      "score": 29.202822639313254,
+      "source": "summon_or_secret",
+      "evidence": {
+        "mean_pixel_delta": 29.202822639313254
+      }
+    },
+    {
+      "timestamp_s": 3.75,
+      "event": "skill_1_visual_change",
+      "score": 46.64327719861,
+      "source": "skill_1",
+      "evidence": {
+        "mean_pixel_delta": 46.64327719861
+      }
+    },
+    {
+      "timestamp_s": 3.75,
+      "event": "skill_2_visual_change",
+      "score": 34.70428167911178,
+      "source": "skill_2",
+      "evidence": {
+        "mean_pixel_delta": 34.70428167911178
+      }
+    },
+    {
+      "timestamp_s": 4.0,
+      "event": "skill_1_visual_change",
+      "score": 35.907154949656956,
+      "source": "skill_1",
+      "evidence": {
+        "mean_pixel_delta": 35.907154949656956
+      }
+    },
+    {
+      "timestamp_s": 4.0,
+      "event": "skill_2_visual_change",
+      "score": 33.72076796151802,
+      "source": "skill_2",
+      "evidence": {
+        "mean_pixel_delta": 33.72076796151802
+      }
+    },
+    {
+      "timestamp_s": 4.0,
+      "event": "blue_ring_candidate",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.44524852513062224,
+        "arena_y": 0.8809442334864005
+      }
+    },
+    {
+      "timestamp_s": 4.0,
+      "event": "red_ring_candidate",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.5486529917696239,
+        "arena_y": 0.557741196036207
+      }
+    },
+    {
+      "timestamp_s": 4.5,
+      "event": "impact_or_damage_flash",
+      "score": 35.33789314090945,
+      "source": "impact_area",
+      "evidence": {
+        "mean_pixel_delta": 35.33789314090945
+      }
+    },
+    {
+      "timestamp_s": 4.75,
+      "event": "summon_or_secret_visual_change",
+      "score": 37.24236141422959,
+      "source": "summon_or_secret",
+      "evidence": {
+        "mean_pixel_delta": 37.24236141422959
+      }
+    },
+    {
+      "timestamp_s": 5.0,
+      "event": "summon_or_secret_visual_change",
+      "score": 35.36916193801833,
+      "source": "summon_or_secret",
+      "evidence": {
+        "mean_pixel_delta": 35.36916193801833
+      }
+    },
+    {
+      "timestamp_s": 5.0,
+      "event": "blue_ring_candidate",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.6593445547626435,
+        "arena_y": 0.6003004418806738
+      }
+    },
+    {
+      "timestamp_s": 5.0,
+      "event": "red_ring_candidate",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.6559023263228428,
+        "arena_y": 0.5643560506047227
+      }
+    },
+    {
+      "timestamp_s": 5.25,
+      "event": "skill_1_visual_change",
+      "score": 47.41220410466601,
+      "source": "skill_1",
+      "evidence": {
+        "mean_pixel_delta": 47.41220410466601
+      }
+    },
+    {
+      "timestamp_s": 5.25,
+      "event": "summon_or_secret_visual_change",
+      "score": 41.494525680197874,
+      "source": "summon_or_secret",
+      "evidence": {
+        "mean_pixel_delta": 41.494525680197874
+      }
+    },
+    {
+      "timestamp_s": 5.5,
+      "event": "skill_1_visual_change",
+      "score": 38.53877454037839,
+      "source": "skill_1",
+      "evidence": {
+        "mean_pixel_delta": 38.53877454037839
+      }
+    },
+    {
+      "timestamp_s": 5.5,
+      "event": "substitution_visual_change",
+      "score": 29.59521072796935,
+      "source": "substitution",
+      "evidence": {
+        "mean_pixel_delta": 29.59521072796935
+      }
+    },
+    {
+      "timestamp_s": 5.5,
+      "event": "summon_or_secret_visual_change",
+      "score": 39.62310854066637,
+      "source": "summon_or_secret",
+      "evidence": {
+        "mean_pixel_delta": 39.62310854066637
+      }
+    },
+    {
+      "timestamp_s": 5.75,
+      "event": "skill_1_visual_change",
+      "score": 34.8832902670112,
+      "source": "skill_1",
+      "evidence": {
+        "mean_pixel_delta": 34.8832902670112
+      }
+    },
+    {
+      "timestamp_s": 6.0,
+      "event": "skill_1_visual_change",
+      "score": 75.92267367608186,
+      "source": "skill_1",
+      "evidence": {
+        "mean_pixel_delta": 75.92267367608186
+      }
+    },
+    {
+      "timestamp_s": 6.0,
+      "event": "substitution_visual_change",
+      "score": 57.07869142351901,
+      "source": "substitution",
+      "evidence": {
+        "mean_pixel_delta": 57.07869142351901
+      }
+    },
+    {
+      "timestamp_s": 6.0,
+      "event": "summon_or_secret_visual_change",
+      "score": 51.57898661428779,
+      "source": "summon_or_secret",
+      "evidence": {
+        "mean_pixel_delta": 51.57898661428779
+      }
+    },
+    {
+      "timestamp_s": 6.0,
+      "event": "blue_ring_candidate",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.6282281155772466,
+        "arena_y": 0.47389939172370893
+      }
+    },
+    {
+      "timestamp_s": 6.0,
+      "event": "red_ring_candidate",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.5634425628405192,
+        "arena_y": 0.6460920652385408
+      }
+    },
+    {
+      "timestamp_s": 6.0,
+      "event": "impact_or_damage_flash",
+      "score": 35.65620190827947,
+      "source": "impact_area",
+      "evidence": {
+        "mean_pixel_delta": 35.65620190827947
+      }
+    },
+    {
+      "timestamp_s": 6.25,
+      "event": "skill_1_visual_change",
+      "score": 65.61581870563427,
+      "source": "skill_1",
+      "evidence": {
+        "mean_pixel_delta": 65.61581870563427
+      }
+    },
+    {
+      "timestamp_s": 6.25,
+      "event": "substitution_visual_change",
+      "score": 55.07222222222222,
+      "source": "substitution",
+      "evidence": {
+        "mean_pixel_delta": 55.07222222222222
+      }
+    },
+    {
+      "timestamp_s": 6.25,
+      "event": "summon_or_secret_visual_change",
+      "score": 60.38840389931617,
+      "source": "summon_or_secret",
+      "evidence": {
+        "mean_pixel_delta": 60.38840389931617
+      }
+    },
+    {
+      "timestamp_s": 6.25,
+      "event": "impact_or_damage_flash",
+      "score": 37.841512488173,
+      "source": "impact_area",
+      "evidence": {
+        "mean_pixel_delta": 37.841512488173
+      }
+    },
+    {
+      "timestamp_s": 6.75,
+      "event": "impact_or_damage_flash",
+      "score": 35.54876904194643,
+      "source": "impact_area",
+      "evidence": {
+        "mean_pixel_delta": 35.54876904194643
+      }
+    },
+    {
+      "timestamp_s": 7.0,
+      "event": "skill_1_visual_change",
+      "score": 31.12518934331284,
+      "source": "skill_1",
+      "evidence": {
+        "mean_pixel_delta": 31.12518934331284
+      }
+    },
+    {
+      "timestamp_s": 7.0,
+      "event": "blue_ring_candidate",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.6729590854353829,
+        "arena_y": 0.6653260611488265
+      }
+    },
+    {
+      "timestamp_s": 7.0,
+      "event": "red_ring_candidate",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.5941175686274224,
+        "arena_y": 0.5843361896750753
+      }
+    },
+    {
+      "timestamp_s": 7.25,
+      "event": "summon_or_secret_visual_change",
+      "score": 33.09091735777681,
+      "source": "summon_or_secret",
+      "evidence": {
+        "mean_pixel_delta": 33.09091735777681
+      }
+    },
+    {
+      "timestamp_s": 7.5,
+      "event": "skill_1_visual_change",
+      "score": 34.25704654132882,
+      "source": "skill_1",
+      "evidence": {
+        "mean_pixel_delta": 34.25704654132882
+      }
+    },
+    {
+      "timestamp_s": 7.5,
+      "event": "summon_or_secret_visual_change",
+      "score": 34.4053360977739,
+      "source": "summon_or_secret",
+      "evidence": {
+        "mean_pixel_delta": 34.4053360977739
+      }
+    },
+    {
+      "timestamp_s": 7.75,
+      "event": "skill_1_visual_change",
+      "score": 36.98060530458285,
+      "source": "skill_1",
+      "evidence": {
+        "mean_pixel_delta": 36.98060530458285
+      }
+    },
+    {
+      "timestamp_s": 7.75,
+      "event": "summon_or_secret_visual_change",
+      "score": 42.967135894078275,
+      "source": "summon_or_secret",
+      "evidence": {
+        "mean_pixel_delta": 42.967135894078275
+      }
+    },
+    {
+      "timestamp_s": 8.0,
+      "event": "skill_1_visual_change",
+      "score": 31.13628263387686,
+      "source": "skill_1",
+      "evidence": {
+        "mean_pixel_delta": 31.13628263387686
+      }
+    },
+    {
+      "timestamp_s": 8.0,
+      "event": "substitution_visual_change",
+      "score": 28.63395225464191,
+      "source": "substitution",
+      "evidence": {
+        "mean_pixel_delta": 28.63395225464191
+      }
+    },
+    {
+      "timestamp_s": 8.0,
+      "event": "summon_or_secret_visual_change",
+      "score": 36.321857267568745,
+      "source": "summon_or_secret",
+      "evidence": {
+        "mean_pixel_delta": 36.321857267568745
+      }
+    },
+    {
+      "timestamp_s": 8.0,
+      "event": "blue_ring_candidate",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.6144586228119086,
+        "arena_y": 0.7839343503515048
+      }
+    },
+    {
+      "timestamp_s": 8.0,
+      "event": "red_ring_candidate",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.519986152859145,
+        "arena_y": 0.548943814303703
+      }
+    },
+    {
+      "timestamp_s": 8.25,
+      "event": "skill_1_visual_change",
+      "score": 73.72578633164038,
+      "source": "skill_1",
+      "evidence": {
+        "mean_pixel_delta": 73.72578633164038
+      }
+    },
+    {
+      "timestamp_s": 8.25,
+      "event": "skill_2_visual_change",
+      "score": 37.25445367340661,
+      "source": "skill_2",
+      "evidence": {
+        "mean_pixel_delta": 37.25445367340661
+      }
+    },
+    {
+      "timestamp_s": 8.25,
+      "event": "substitution_visual_change",
+      "score": 58.47571470674919,
+      "source": "substitution",
+      "evidence": {
+        "mean_pixel_delta": 58.47571470674919
+      }
+    },
+    {
+      "timestamp_s": 8.25,
+      "event": "summon_or_secret_visual_change",
+      "score": 44.611468790920995,
+      "source": "summon_or_secret",
+      "evidence": {
+        "mean_pixel_delta": 44.611468790920995
+      }
+    },
+    {
+      "timestamp_s": 8.25,
+      "event": "health_bar_change",
+      "score": 31.816959064327484,
+      "source": "self_health",
+      "evidence": {
+        "mean_pixel_delta": 31.816959064327484
+      }
+    },
+    {
+      "timestamp_s": 8.5,
+      "event": "skill_1_visual_change",
+      "score": 48.91120912412011,
+      "source": "skill_1",
+      "evidence": {
+        "mean_pixel_delta": 48.91120912412011
+      }
+    },
+    {
+      "timestamp_s": 8.5,
+      "event": "skill_2_visual_change",
+      "score": 38.12414352434488,
+      "source": "skill_2",
+      "evidence": {
+        "mean_pixel_delta": 38.12414352434488
+      }
+    },
+    {
+      "timestamp_s": 8.5,
+      "event": "substitution_visual_change",
+      "score": 56.3640730916593,
+      "source": "substitution",
+      "evidence": {
+        "mean_pixel_delta": 56.3640730916593
+      }
+    },
+    {
+      "timestamp_s": 8.5,
+      "event": "summon_or_secret_visual_change",
+      "score": 43.903772006401866,
+      "source": "summon_or_secret",
+      "evidence": {
+        "mean_pixel_delta": 43.903772006401866
+      }
+    },
+    {
+      "timestamp_s": 8.75,
+      "event": "skill_1_visual_change",
+      "score": 30.43918738305266,
+      "source": "skill_1",
+      "evidence": {
+        "mean_pixel_delta": 30.43918738305266
+      }
+    },
+    {
+      "timestamp_s": 9.0,
+      "event": "blue_ring_candidate",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.5079260565374923,
+        "arena_y": 0.8383724439009291
+      }
+    },
+    {
+      "timestamp_s": 9.0,
+      "event": "red_ring_candidate",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.5967141629597932,
+        "arena_y": 0.5475307125585015
+      }
+    },
+    {
+      "timestamp_s": 9.75,
+      "event": "skill_1_visual_change",
+      "score": 33.399313908937,
+      "source": "skill_1",
+      "evidence": {
+        "mean_pixel_delta": 33.399313908937
+      }
+    },
+    {
+      "timestamp_s": 10.0,
+      "event": "summon_or_secret_visual_change",
+      "score": 33.50072748435909,
+      "source": "summon_or_secret",
+      "evidence": {
+        "mean_pixel_delta": 33.50072748435909
+      }
+    },
+    {
+      "timestamp_s": 10.0,
+      "event": "blue_ring_candidate",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.763933343752701,
+        "arena_y": 0.8935833640162563
+      }
+    },
+    {
+      "timestamp_s": 10.0,
+      "event": "red_ring_candidate",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.7232764075384707,
+        "arena_y": 0.5842963630192219
+      }
+    },
+    {
+      "timestamp_s": 10.25,
+      "event": "skill_1_visual_change",
+      "score": 33.38859187977071,
+      "source": "skill_1",
+      "evidence": {
+        "mean_pixel_delta": 33.38859187977071
+      }
+    },
+    {
+      "timestamp_s": 10.25,
+      "event": "summon_or_secret_visual_change",
+      "score": 28.621653571948205,
+      "source": "summon_or_secret",
+      "evidence": {
+        "mean_pixel_delta": 28.621653571948205
+      }
+    },
+    {
+      "timestamp_s": 10.25,
+      "event": "impact_or_damage_flash",
+      "score": 37.82563675812881,
+      "source": "impact_area",
+      "evidence": {
+        "mean_pixel_delta": 37.82563675812881
+      }
+    },
+    {
+      "timestamp_s": 10.25,
+      "event": "health_bar_change",
+      "score": 33.007927225471086,
+      "source": "self_health",
+      "evidence": {
+        "mean_pixel_delta": 33.007927225471086
+      }
+    },
+    {
+      "timestamp_s": 10.75,
+      "event": "skill_1_visual_change",
+      "score": 36.431673052362704,
+      "source": "skill_1",
+      "evidence": {
+        "mean_pixel_delta": 36.431673052362704
+      }
+    },
+    {
+      "timestamp_s": 10.75,
+      "event": "impact_or_damage_flash",
+      "score": 43.90515220257705,
+      "source": "impact_area",
+      "evidence": {
+        "mean_pixel_delta": 43.90515220257705
+      }
+    },
+    {
+      "timestamp_s": 11.0,
+      "event": "skill_1_visual_change",
+      "score": 82.2240042769313,
+      "source": "skill_1",
+      "evidence": {
+        "mean_pixel_delta": 82.2240042769313
+      }
+    },
+    {
+      "timestamp_s": 11.0,
+      "event": "skill_2_visual_change",
+      "score": 28.568210420337277,
+      "source": "skill_2",
+      "evidence": {
+        "mean_pixel_delta": 28.568210420337277
+      }
+    },
+    {
+      "timestamp_s": 11.0,
+      "event": "substitution_visual_change",
+      "score": 72.08122605363985,
+      "source": "substitution",
+      "evidence": {
+        "mean_pixel_delta": 72.08122605363985
+      }
+    },
+    {
+      "timestamp_s": 11.0,
+      "event": "summon_or_secret_visual_change",
+      "score": 86.03573766914012,
+      "source": "summon_or_secret",
+      "evidence": {
+        "mean_pixel_delta": 86.03573766914012
+      }
+    },
+    {
+      "timestamp_s": 11.0,
+      "event": "blue_ring_candidate",
+      "score": 0.8207923891548511,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.7493903285975078,
+        "arena_y": 0.8279312557445849
+      }
+    },
+    {
+      "timestamp_s": 11.0,
+      "event": "red_ring_candidate",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.3381580091661214,
+        "arena_y": 0.5359865245614622
+      }
+    },
+    {
+      "timestamp_s": 11.0,
+      "event": "impact_or_damage_flash",
+      "score": 56.69776708756224,
+      "source": "impact_area",
+      "evidence": {
+        "mean_pixel_delta": 56.69776708756224
+      }
+    },
+    {
+      "timestamp_s": 11.25,
+      "event": "skill_1_visual_change",
+      "score": 74.06681220113458,
+      "source": "skill_1",
+      "evidence": {
+        "mean_pixel_delta": 74.06681220113458
+      }
+    },
+    {
+      "timestamp_s": 11.25,
+      "event": "skill_2_visual_change",
+      "score": 31.41080068238387,
+      "source": "skill_2",
+      "evidence": {
+        "mean_pixel_delta": 31.41080068238387
+      }
+    },
+    {
+      "timestamp_s": 11.25,
+      "event": "substitution_visual_change",
+      "score": 42.73050397877984,
+      "source": "substitution",
+      "evidence": {
+        "mean_pixel_delta": 42.73050397877984
+      }
+    },
+    {
+      "timestamp_s": 11.25,
+      "event": "summon_or_secret_visual_change",
+      "score": 58.47917576022115,
+      "source": "summon_or_secret",
+      "evidence": {
+        "mean_pixel_delta": 58.47917576022115
+      }
+    },
+    {
+      "timestamp_s": 11.25,
+      "event": "impact_or_damage_flash",
+      "score": 51.579473012905524,
+      "source": "impact_area",
+      "evidence": {
+        "mean_pixel_delta": 51.579473012905524
+      }
+    },
+    {
+      "timestamp_s": 12.0,
+      "event": "blue_ring_candidate",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.7164011422653925,
+        "arena_y": 0.8645793773605325
+      }
+    },
+    {
+      "timestamp_s": 12.0,
+      "event": "red_ring_candidate",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.47426444559952674,
+        "arena_y": 0.5009557760708194
+      }
+    },
+    {
+      "timestamp_s": 13.0,
+      "event": "blue_ring_candidate",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.6979362554307547,
+        "arena_y": 0.8725331195643291
+      }
+    },
+    {
+      "timestamp_s": 13.0,
+      "event": "red_ring_candidate",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.49047341012991374,
+        "arena_y": 0.5061860256353364
+      }
+    },
+    {
+      "timestamp_s": 13.25,
+      "event": "skill_1_visual_change",
+      "score": 54.85195580504322,
+      "source": "skill_1",
+      "evidence": {
+        "mean_pixel_delta": 54.85195580504322
+      }
+    },
+    {
+      "timestamp_s": 13.25,
+      "event": "skill_2_visual_change",
+      "score": 38.78441983387868,
+      "source": "skill_2",
+      "evidence": {
+        "mean_pixel_delta": 38.78441983387868
+      }
+    },
+    {
+      "timestamp_s": 13.25,
+      "event": "substitution_visual_change",
+      "score": 29.357294429708222,
+      "source": "substitution",
+      "evidence": {
+        "mean_pixel_delta": 29.357294429708222
+      }
+    },
+    {
+      "timestamp_s": 13.25,
+      "event": "summon_or_secret_visual_change",
+      "score": 36.34982904117562,
+      "source": "summon_or_secret",
+      "evidence": {
+        "mean_pixel_delta": 36.34982904117562
+      }
+    },
+    {
+      "timestamp_s": 13.5,
+      "event": "skill_2_visual_change",
+      "score": 28.05168218810303,
+      "source": "skill_2",
+      "evidence": {
+        "mean_pixel_delta": 28.05168218810303
+      }
+    },
+    {
+      "timestamp_s": 14.0,
+      "event": "blue_ring_candidate",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.7390639412151683,
+        "arena_y": 0.8345791267399169
+      }
+    },
+    {
+      "timestamp_s": 14.0,
+      "event": "red_ring_candidate",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.5549130426847054,
+        "arena_y": 0.5027002864122522
+      }
+    },
+    {
+      "timestamp_s": 14.25,
+      "event": "skill_1_visual_change",
+      "score": 39.08506341144673,
+      "source": "skill_1",
+      "evidence": {
+        "mean_pixel_delta": 39.08506341144673
+      }
+    },
+    {
+      "timestamp_s": 14.25,
+      "event": "skill_2_visual_change",
+      "score": 31.60389574069413,
+      "source": "skill_2",
+      "evidence": {
+        "mean_pixel_delta": 31.60389574069413
+      }
+    },
+    {
+      "timestamp_s": 14.25,
+      "event": "summon_or_secret_visual_change",
+      "score": 44.87114433289684,
+      "source": "summon_or_secret",
+      "evidence": {
+        "mean_pixel_delta": 44.87114433289684
+      }
+    },
+    {
+      "timestamp_s": 14.25,
+      "event": "impact_or_damage_flash",
+      "score": 48.24046651897957,
+      "source": "impact_area",
+      "evidence": {
+        "mean_pixel_delta": 48.24046651897957
+      }
+    },
+    {
+      "timestamp_s": 14.25,
+      "event": "health_bar_change",
+      "score": 19.795711500974658,
+      "source": "enemy_health",
+      "evidence": {
+        "mean_pixel_delta": 19.795711500974658
+      }
+    },
+    {
+      "timestamp_s": 14.5,
+      "event": "skill_1_visual_change",
+      "score": 53.728162404585824,
+      "source": "skill_1",
+      "evidence": {
+        "mean_pixel_delta": 53.728162404585824
+      }
+    },
+    {
+      "timestamp_s": 14.5,
+      "event": "substitution_visual_change",
+      "score": 37.61122900088417,
+      "source": "substitution",
+      "evidence": {
+        "mean_pixel_delta": 37.61122900088417
+      }
+    },
+    {
+      "timestamp_s": 14.5,
+      "event": "summon_or_secret_visual_change",
+      "score": 50.35910446675396,
+      "source": "summon_or_secret",
+      "evidence": {
+        "mean_pixel_delta": 50.35910446675396
+      }
+    },
+    {
+      "timestamp_s": 14.5,
+      "event": "impact_or_damage_flash",
+      "score": 43.48373985284488,
+      "source": "impact_area",
+      "evidence": {
+        "mean_pixel_delta": 43.48373985284488
+      }
+    }
+  ],
+  "notes": [
+    "Candidate events require human review.",
+    "The tool is offline analysis only and does not generate game controls."
+  ]
+}
