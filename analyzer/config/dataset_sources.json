@@ -28,7 +28,26 @@
       "kind": "reference_media",
       "status": "reference_only",
       "purpose": ["character knowledge cards", "review rules"],
-      "urls": ["https://www.bilibili.com/video/BV1jjbe6hENc/"]
+      "urls": [
+        "https://www.bilibili.com/video/BV1jjbe6hENc/",
+        "https://www.bilibili.com/video/BV1vnVN63E19/",
+        "https://www.bilibili.com/video/BV1nVVT69EEr/",
+        "https://game.xiaomi.com/viewpoint/1214995289_1779864501299_16"
+      ],
+      "notes": "浦式技能与机制参考；公开页面可能对应不同版本，必须由审核者确认，不能直接当作训练标签。"
+    },
+    {
+      "id": "competitive_replay_reference",
+      "kind": "reference_media",
+      "status": "reference_only",
+      "purpose": ["中立博弈", "替身管理", "距离与起手复盘"],
+      "urls": [
+        "https://www.bilibili.com/video/BV17V5iznEzV/",
+        "https://www.bilibili.com/video/BV1xx4y1b7Ma/",
+        "https://www.huya.com/video/play/1068481892.html",
+        "https://www.huya.com/video/play/1048239408.html"
+      ],
+      "notes": "赛事/高手对局仅用于建立战术词表和复盘规则；未获得创作者授权前不下载、不再发布。"
     }
   ]
 }
