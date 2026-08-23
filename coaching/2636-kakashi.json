@@ -1,0 +1,531 @@
+{
+  "schema_version": "0.1",
+  "mode": "offline_tactical_coach",
+  "character": {
+    "id": "kakashi_susanoo",
+    "name": "旗木卡卡西·须佐能乎",
+    "version": "0.1-reference",
+    "source_policy": "参考资料整理；必须由录像审核者确认实际版本与帧数据",
+    "principles": [
+      "普通普攻与上下特殊普攻可以在 1A-4A 间衔接，特殊普攻 4A 雷传后不要继续贪后续。",
+      "上拉 3A 的高跳可用于规避部分地面攻击，下拉 2A 的蓄力雷切可边蓄力边调整位置。",
+      "二技能一段是虚化/无敌窗口，二段是雷切手里剑；先确认敌方动作再决定是否转入组合技。",
+      "神威抓取或奥义收尾需要结合命中、血条和敌方替身状态确认，未命中时优先撤出。"
+    ],
+    "action_vocabulary": [
+      "保持中距离",
+      "普攻 1A-4A",
+      "上拉特殊普攻",
+      "下拉特殊普攻",
+      "神威·左",
+      "神威·右一段虚化",
+      "神威·右二段手里剑",
+      "须佐能乎组合技",
+      "奥义·神威雷切"
+    ]
+  },
+  "video": {
+    "filename": "2636.mp4",
+    "width": 2400,
+    "height": 1080,
+    "fps": 29.97002997002997,
+    "duration_s": 30.253444
+  },
+  "source_report_event_count": 105,
+  "recommendation_count": 43,
+  "recommendations": [
+    {
+      "timestamp_s": 0.0,
+      "priority": "high",
+      "situation": "开局中立",
+      "advice": "保持中距离，先用蓝/红圈判断 Y 轴关系；看到地面起手时优先考虑上拉 3A 躲避，不要直接交奥义。",
+      "rationale": "须佐卡卡西的上下特殊普攻提供不同的空间选择，开局需要先建立轴线优势。",
+      "confidence": 0.78,
+      "evidence": [
+        "initial_state",
+        "blue_ring_state"
+      ]
+    },
+    {
+      "timestamp_s": 1.0,
+      "priority": "medium",
+      "situation": "敌方轴线更新",
+      "advice": "按敌方红圈位置调整 Y 轴：近身可尝试上拉 2A/3A，敌人压进时保留二技能一段虚化作为反应窗口。",
+      "rationale": "红圈只提供粗略位置，不能单独证明敌方已出招。",
+      "confidence": 0.66,
+      "evidence": [
+        "red_ring_state",
+        "arena"
+      ]
+    },
+    {
+      "timestamp_s": 1.667,
+      "priority": "medium",
+      "situation": "敌方轴线更新",
+      "advice": "按敌方红圈位置调整 Y 轴：近身可尝试上拉 2A/3A，敌人压进时保留二技能一段虚化作为反应窗口。",
+      "rationale": "红圈只提供粗略位置，不能单独证明敌方已出招。",
+      "confidence": 0.66,
+      "evidence": [
+        "red_ring_state",
+        "arena"
+      ]
+    },
+    {
+      "timestamp_s": 2.5,
+      "priority": "low",
+      "situation": "自身位置更新",
+      "advice": "检查是否处于适合雷切或神威的距离；距离不足时先走位，避免特殊普攻 4A 结束后暴露。",
+      "rationale": "位置关系是卡卡西雷传和神威变轨是否安全的前置条件。",
+      "confidence": 0.61,
+      "evidence": [
+        "blue_ring_state"
+      ]
+    },
+    {
+      "timestamp_s": 3.167,
+      "priority": "low",
+      "situation": "自身位置更新",
+      "advice": "检查是否处于适合雷切或神威的距离；距离不足时先走位，避免特殊普攻 4A 结束后暴露。",
+      "rationale": "位置关系是卡卡西雷传和神威变轨是否安全的前置条件。",
+      "confidence": 0.61,
+      "evidence": [
+        "blue_ring_state"
+      ]
+    },
+    {
+      "timestamp_s": 3.833,
+      "priority": "low",
+      "situation": "自身位置更新",
+      "advice": "检查是否处于适合雷切或神威的距离；距离不足时先走位，避免特殊普攻 4A 结束后暴露。",
+      "rationale": "位置关系是卡卡西雷传和神威变轨是否安全的前置条件。",
+      "confidence": 0.61,
+      "evidence": [
+        "blue_ring_state"
+      ]
+    },
+    {
+      "timestamp_s": 4.5,
+      "priority": "low",
+      "situation": "自身位置更新",
+      "advice": "检查是否处于适合雷切或神威的距离；距离不足时先走位，避免特殊普攻 4A 结束后暴露。",
+      "rationale": "位置关系是卡卡西雷传和神威变轨是否安全的前置条件。",
+      "confidence": 0.61,
+      "evidence": [
+        "blue_ring_state"
+      ]
+    },
+    {
+      "timestamp_s": 5.167,
+      "priority": "low",
+      "situation": "自身位置更新",
+      "advice": "检查是否处于适合雷切或神威的距离；距离不足时先走位，避免特殊普攻 4A 结束后暴露。",
+      "rationale": "位置关系是卡卡西雷传和神威变轨是否安全的前置条件。",
+      "confidence": 0.61,
+      "evidence": [
+        "blue_ring_state"
+      ]
+    },
+    {
+      "timestamp_s": 5.833,
+      "priority": "low",
+      "situation": "自身位置更新",
+      "advice": "检查是否处于适合雷切或神威的距离；距离不足时先走位，避免特殊普攻 4A 结束后暴露。",
+      "rationale": "位置关系是卡卡西雷传和神威变轨是否安全的前置条件。",
+      "confidence": 0.61,
+      "evidence": [
+        "blue_ring_state"
+      ]
+    },
+    {
+      "timestamp_s": 6.5,
+      "priority": "low",
+      "situation": "自身位置更新",
+      "advice": "检查是否处于适合雷切或神威的距离；距离不足时先走位，避免特殊普攻 4A 结束后暴露。",
+      "rationale": "位置关系是卡卡西雷传和神威变轨是否安全的前置条件。",
+      "confidence": 0.61,
+      "evidence": [
+        "blue_ring_state"
+      ]
+    },
+    {
+      "timestamp_s": 7.167,
+      "priority": "low",
+      "situation": "自身位置更新",
+      "advice": "检查是否处于适合雷切或神威的距离；距离不足时先走位，避免特殊普攻 4A 结束后暴露。",
+      "rationale": "位置关系是卡卡西雷传和神威变轨是否安全的前置条件。",
+      "confidence": 0.61,
+      "evidence": [
+        "blue_ring_state"
+      ]
+    },
+    {
+      "timestamp_s": 7.833,
+      "priority": "low",
+      "situation": "自身位置更新",
+      "advice": "检查是否处于适合雷切或神威的距离；距离不足时先走位，避免特殊普攻 4A 结束后暴露。",
+      "rationale": "位置关系是卡卡西雷传和神威变轨是否安全的前置条件。",
+      "confidence": 0.61,
+      "evidence": [
+        "blue_ring_state"
+      ]
+    },
+    {
+      "timestamp_s": 8.5,
+      "priority": "low",
+      "situation": "自身位置更新",
+      "advice": "检查是否处于适合雷切或神威的距离；距离不足时先走位，避免特殊普攻 4A 结束后暴露。",
+      "rationale": "位置关系是卡卡西雷传和神威变轨是否安全的前置条件。",
+      "confidence": 0.61,
+      "evidence": [
+        "blue_ring_state"
+      ]
+    },
+    {
+      "timestamp_s": 9.167,
+      "priority": "low",
+      "situation": "自身位置更新",
+      "advice": "检查是否处于适合雷切或神威的距离；距离不足时先走位，避免特殊普攻 4A 结束后暴露。",
+      "rationale": "位置关系是卡卡西雷传和神威变轨是否安全的前置条件。",
+      "confidence": 0.61,
+      "evidence": [
+        "blue_ring_state"
+      ]
+    },
+    {
+      "timestamp_s": 9.833,
+      "priority": "low",
+      "situation": "自身位置更新",
+      "advice": "检查是否处于适合雷切或神威的距离；距离不足时先走位，避免特殊普攻 4A 结束后暴露。",
+      "rationale": "位置关系是卡卡西雷传和神威变轨是否安全的前置条件。",
+      "confidence": 0.61,
+      "evidence": [
+        "blue_ring_state"
+      ]
+    },
+    {
+      "timestamp_s": 10.292,
+      "priority": "high",
+      "situation": "神威·左候选",
+      "advice": "如果上一段是上/下特殊 2A 或 3A，检查是否利用神威变轨改变 Y 轴；命中后记录吸入与后续连段。",
+      "rationale": "神威·左可以接在特殊普攻突进中，是否命中必须结合受击和位置变化确认。",
+      "confidence": 0.73,
+      "evidence": [
+        "skill_1_visual_change",
+        "skill_1_region"
+      ]
+    },
+    {
+      "timestamp_s": 10.917,
+      "priority": "medium",
+      "situation": "敌方轴线更新",
+      "advice": "按敌方红圈位置调整 Y 轴：近身可尝试上拉 2A/3A，敌人压进时保留二技能一段虚化作为反应窗口。",
+      "rationale": "红圈只提供粗略位置，不能单独证明敌方已出招。",
+      "confidence": 0.66,
+      "evidence": [
+        "red_ring_state",
+        "arena"
+      ]
+    },
+    {
+      "timestamp_s": 11.583,
+      "priority": "medium",
+      "situation": "敌方轴线更新",
+      "advice": "按敌方红圈位置调整 Y 轴：近身可尝试上拉 2A/3A，敌人压进时保留二技能一段虚化作为反应窗口。",
+      "rationale": "红圈只提供粗略位置，不能单独证明敌方已出招。",
+      "confidence": 0.66,
+      "evidence": [
+        "red_ring_state",
+        "arena"
+      ]
+    },
+    {
+      "timestamp_s": 12.25,
+      "priority": "medium",
+      "situation": "敌方轴线更新",
+      "advice": "按敌方红圈位置调整 Y 轴：近身可尝试上拉 2A/3A，敌人压进时保留二技能一段虚化作为反应窗口。",
+      "rationale": "红圈只提供粗略位置，不能单独证明敌方已出招。",
+      "confidence": 0.66,
+      "evidence": [
+        "red_ring_state",
+        "arena"
+      ]
+    },
+    {
+      "timestamp_s": 13.25,
+      "priority": "low",
+      "situation": "自身位置更新",
+      "advice": "检查是否处于适合雷切或神威的距离；距离不足时先走位，避免特殊普攻 4A 结束后暴露。",
+      "rationale": "位置关系是卡卡西雷传和神威变轨是否安全的前置条件。",
+      "confidence": 0.61,
+      "evidence": [
+        "blue_ring_state"
+      ]
+    },
+    {
+      "timestamp_s": 13.917,
+      "priority": "low",
+      "situation": "自身位置更新",
+      "advice": "检查是否处于适合雷切或神威的距离；距离不足时先走位，避免特殊普攻 4A 结束后暴露。",
+      "rationale": "位置关系是卡卡西雷传和神威变轨是否安全的前置条件。",
+      "confidence": 0.61,
+      "evidence": [
+        "blue_ring_state"
+      ]
+    },
+    {
+      "timestamp_s": 14.458,
+      "priority": "medium",
+      "situation": "神威/雷传命中候选",
+      "advice": "回看受击闪光是否与神威抓取或雷传重合；确认命中再继续连段，否则优先结束动作并回到中立。",
+      "rationale": "特效闪光可能来自其他技能，不能单独作为抓取成功证据。",
+      "confidence": 0.59,
+      "evidence": [
+        "impact_or_damage_flash"
+      ]
+    },
+    {
+      "timestamp_s": 15.167,
+      "priority": "medium",
+      "situation": "敌方轴线更新",
+      "advice": "按敌方红圈位置调整 Y 轴：近身可尝试上拉 2A/3A，敌人压进时保留二技能一段虚化作为反应窗口。",
+      "rationale": "红圈只提供粗略位置，不能单独证明敌方已出招。",
+      "confidence": 0.66,
+      "evidence": [
+        "red_ring_state",
+        "arena"
+      ]
+    },
+    {
+      "timestamp_s": 15.708,
+      "priority": "medium",
+      "situation": "替身候选",
+      "advice": "检查对手是否真的替身；若替身已交，才把神威手里剑或奥义作为下一轮压制资源，否则保留技能。",
+      "rationale": "替身按钮变化不等于对手已经使用替身。",
+      "confidence": 0.63,
+      "evidence": [
+        "substitution_visual_change"
+      ]
+    },
+    {
+      "timestamp_s": 16.5,
+      "priority": "medium",
+      "situation": "敌方轴线更新",
+      "advice": "按敌方红圈位置调整 Y 轴：近身可尝试上拉 2A/3A，敌人压进时保留二技能一段虚化作为反应窗口。",
+      "rationale": "红圈只提供粗略位置，不能单独证明敌方已出招。",
+      "confidence": 0.66,
+      "evidence": [
+        "red_ring_state",
+        "arena"
+      ]
+    },
+    {
+      "timestamp_s": 17.417,
+      "priority": "low",
+      "situation": "自身位置更新",
+      "advice": "检查是否处于适合雷切或神威的距离；距离不足时先走位，避免特殊普攻 4A 结束后暴露。",
+      "rationale": "位置关系是卡卡西雷传和神威变轨是否安全的前置条件。",
+      "confidence": 0.61,
+      "evidence": [
+        "blue_ring_state"
+      ]
+    },
+    {
+      "timestamp_s": 18.083,
+      "priority": "low",
+      "situation": "自身位置更新",
+      "advice": "检查是否处于适合雷切或神威的距离；距离不足时先走位，避免特殊普攻 4A 结束后暴露。",
+      "rationale": "位置关系是卡卡西雷传和神威变轨是否安全的前置条件。",
+      "confidence": 0.61,
+      "evidence": [
+        "blue_ring_state"
+      ]
+    },
+    {
+      "timestamp_s": 18.583,
+      "priority": "high",
+      "situation": "神威·左候选",
+      "advice": "如果上一段是上/下特殊 2A 或 3A，检查是否利用神威变轨改变 Y 轴；命中后记录吸入与后续连段。",
+      "rationale": "神威·左可以接在特殊普攻突进中，是否命中必须结合受击和位置变化确认。",
+      "confidence": 0.73,
+      "evidence": [
+        "skill_1_visual_change",
+        "skill_1_region"
+      ]
+    },
+    {
+      "timestamp_s": 19.167,
+      "priority": "medium",
+      "situation": "敌方轴线更新",
+      "advice": "按敌方红圈位置调整 Y 轴：近身可尝试上拉 2A/3A，敌人压进时保留二技能一段虚化作为反应窗口。",
+      "rationale": "红圈只提供粗略位置，不能单独证明敌方已出招。",
+      "confidence": 0.66,
+      "evidence": [
+        "red_ring_state",
+        "arena"
+      ]
+    },
+    {
+      "timestamp_s": 19.708,
+      "priority": "high",
+      "situation": "神威·左候选",
+      "advice": "如果上一段是上/下特殊 2A 或 3A，检查是否利用神威变轨改变 Y 轴；命中后记录吸入与后续连段。",
+      "rationale": "神威·左可以接在特殊普攻突进中，是否命中必须结合受击和位置变化确认。",
+      "confidence": 0.73,
+      "evidence": [
+        "skill_1_visual_change",
+        "skill_1_region"
+      ]
+    },
+    {
+      "timestamp_s": 20.667,
+      "priority": "medium",
+      "situation": "敌方轴线更新",
+      "advice": "按敌方红圈位置调整 Y 轴：近身可尝试上拉 2A/3A，敌人压进时保留二技能一段虚化作为反应窗口。",
+      "rationale": "红圈只提供粗略位置，不能单独证明敌方已出招。",
+      "confidence": 0.66,
+      "evidence": [
+        "red_ring_state",
+        "arena"
+      ]
+    },
+    {
+      "timestamp_s": 21.167,
+      "priority": "medium",
+      "situation": "替身候选",
+      "advice": "检查对手是否真的替身；若替身已交，才把神威手里剑或奥义作为下一轮压制资源，否则保留技能。",
+      "rationale": "替身按钮变化不等于对手已经使用替身。",
+      "confidence": 0.63,
+      "evidence": [
+        "substitution_visual_change"
+      ]
+    },
+    {
+      "timestamp_s": 22.083,
+      "priority": "medium",
+      "situation": "敌方轴线更新",
+      "advice": "按敌方红圈位置调整 Y 轴：近身可尝试上拉 2A/3A，敌人压进时保留二技能一段虚化作为反应窗口。",
+      "rationale": "红圈只提供粗略位置，不能单独证明敌方已出招。",
+      "confidence": 0.66,
+      "evidence": [
+        "red_ring_state",
+        "arena"
+      ]
+    },
+    {
+      "timestamp_s": 23.167,
+      "priority": "medium",
+      "situation": "敌方轴线更新",
+      "advice": "按敌方红圈位置调整 Y 轴：近身可尝试上拉 2A/3A，敌人压进时保留二技能一段虚化作为反应窗口。",
+      "rationale": "红圈只提供粗略位置，不能单独证明敌方已出招。",
+      "confidence": 0.66,
+      "evidence": [
+        "red_ring_state",
+        "arena"
+      ]
+    },
+    {
+      "timestamp_s": 24.167,
+      "priority": "low",
+      "situation": "自身位置更新",
+      "advice": "检查是否处于适合雷切或神威的距离；距离不足时先走位，避免特殊普攻 4A 结束后暴露。",
+      "rationale": "位置关系是卡卡西雷传和神威变轨是否安全的前置条件。",
+      "confidence": 0.61,
+      "evidence": [
+        "blue_ring_state"
+      ]
+    },
+    {
+      "timestamp_s": 24.75,
+      "priority": "medium",
+      "situation": "神威/雷传命中候选",
+      "advice": "回看受击闪光是否与神威抓取或雷传重合；确认命中再继续连段，否则优先结束动作并回到中立。",
+      "rationale": "特效闪光可能来自其他技能，不能单独作为抓取成功证据。",
+      "confidence": 0.59,
+      "evidence": [
+        "impact_or_damage_flash"
+      ]
+    },
+    {
+      "timestamp_s": 25.5,
+      "priority": "low",
+      "situation": "自身位置更新",
+      "advice": "检查是否处于适合雷切或神威的距离；距离不足时先走位，避免特殊普攻 4A 结束后暴露。",
+      "rationale": "位置关系是卡卡西雷传和神威变轨是否安全的前置条件。",
+      "confidence": 0.61,
+      "evidence": [
+        "blue_ring_state"
+      ]
+    },
+    {
+      "timestamp_s": 26.167,
+      "priority": "low",
+      "situation": "自身位置更新",
+      "advice": "检查是否处于适合雷切或神威的距离；距离不足时先走位，避免特殊普攻 4A 结束后暴露。",
+      "rationale": "位置关系是卡卡西雷传和神威变轨是否安全的前置条件。",
+      "confidence": 0.61,
+      "evidence": [
+        "blue_ring_state"
+      ]
+    },
+    {
+      "timestamp_s": 26.75,
+      "priority": "medium",
+      "situation": "敌方轴线更新",
+      "advice": "按敌方红圈位置调整 Y 轴：近身可尝试上拉 2A/3A，敌人压进时保留二技能一段虚化作为反应窗口。",
+      "rationale": "红圈只提供粗略位置，不能单独证明敌方已出招。",
+      "confidence": 0.66,
+      "evidence": [
+        "red_ring_state",
+        "arena"
+      ]
+    },
+    {
+      "timestamp_s": 27.5,
+      "priority": "low",
+      "situation": "自身位置更新",
+      "advice": "检查是否处于适合雷切或神威的距离；距离不足时先走位，避免特殊普攻 4A 结束后暴露。",
+      "rationale": "位置关系是卡卡西雷传和神威变轨是否安全的前置条件。",
+      "confidence": 0.61,
+      "evidence": [
+        "blue_ring_state"
+      ]
+    },
+    {
+      "timestamp_s": 28.167,
+      "priority": "low",
+      "situation": "自身位置更新",
+      "advice": "检查是否处于适合雷切或神威的距离；距离不足时先走位，避免特殊普攻 4A 结束后暴露。",
+      "rationale": "位置关系是卡卡西雷传和神威变轨是否安全的前置条件。",
+      "confidence": 0.61,
+      "evidence": [
+        "blue_ring_state"
+      ]
+    },
+    {
+      "timestamp_s": 28.833,
+      "priority": "low",
+      "situation": "自身位置更新",
+      "advice": "检查是否处于适合雷切或神威的距离；距离不足时先走位，避免特殊普攻 4A 结束后暴露。",
+      "rationale": "位置关系是卡卡西雷传和神威变轨是否安全的前置条件。",
+      "confidence": 0.61,
+      "evidence": [
+        "blue_ring_state"
+      ]
+    },
+    {
+      "timestamp_s": 29.583,
+      "priority": "low",
+      "situation": "自身位置更新",
+      "advice": "检查是否处于适合雷切或神威的距离；距离不足时先走位，避免特殊普攻 4A 结束后暴露。",
+      "rationale": "位置关系是卡卡西雷传和神威变轨是否安全的前置条件。",
+      "confidence": 0.61,
+      "evidence": [
+        "blue_ring_state"
+      ]
+    }
+  ],
+  "notes": [
+    "Suggestions are for human replay review and training only.",
+    "No recommendation is a game-control command or a claim of confirmed game state."
+  ]
+}
