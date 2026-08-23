@@ -1,0 +1,11 @@
+{
+  "input_events": ["joystick_visual_change", "attack_visual_change", "skill_1_visual_change", "skill_2_visual_change", "substitution_visual_change", "summon_or_secret_visual_change"],
+  "world_events": ["blue_ring_state", "red_ring_state", "impact_or_damage_flash", "health_bar_change"],
+  "review_fields": ["timestamp_s", "event", "score", "source", "evidence.segment_start_s", "evidence.segment_end_s", "evidence.duration_s", "evidence.observations"],
+  "semantics": {
+    "visual_change": "A debounced review segment based on UI-region pixel change; it is not a confirmed game action.",
+    "ring_state": "A sparse colour-based position observation for review, not player tracking ground truth.",
+    "impact_or_damage_flash": "A short visual candidate that needs confirmation from the video.",
+    "health_bar_change": "A visual health-bar movement candidate that needs confirmation from the video."
+  }
+}
