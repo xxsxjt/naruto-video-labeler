@@ -9,14 +9,15 @@
 </head>
 <body>
 <h1>火影手游录像标注器</h1>
-<p>预设样本可直接播放并载入候选事件；也可用本地录像和报告进行离线复盘。不会读取或操作游戏客户端。</p>
+<p>预设样本可直接播放并载入离线候选片段；也可用本地录像和报告进行复盘。候选只供审核，不会读取或操作游戏客户端。</p>
 <div class="samples" id="samples"></div>
 <div class="inputs"><label>本地录像 <input id="videoInput" type="file" accept="video/*"></label><label>本地候选报告 <input id="reportInput" type="file" accept="application/json,.json"></label><button class="neutral" id="acceptVisible">接受当前可见事件</button><button class="neutral" id="export">导出标注 JSON</button></div>
-<main><section><video id="video" controls preload="metadata"></video><p class="hint">点击右侧事件会跳到对应时刻。绿色=已接受，红色=已拒绝。</p></section><aside><div id="summary">正在载入预设报告…</div><div id="events"></div></aside></main>
+<main><section><video id="video" controls preload="metadata"></video><p class="hint">点击右侧候选会跳到对应时刻。绿色=已接受，红色=已拒绝；“视觉变化”不等于已确认的游戏操作。</p></section><aside><div id="summary">正在载入预设报告…</div><div id="events"></div></aside></main>
 <div class="actions"><button id="accept">接受选中事件</button><button class="reject" id="reject">拒绝选中事件</button><button class="neutral" id="clear">清除本次标注</button></div><div id="status"></div>
 <script>
 const video=document.querySelector("#video"),list=document.querySelector("#events"),summary=document.querySelector("#summary"),status=document.querySelector("#status"),samplesBox=document.querySelector("#samples");
 const samples=[["2097","样本 1 · 9 秒"],["2514","样本 2 · 10 秒"],["20143","样本 3 · 12 秒"],["20789","样本 4 · 12 秒"],["2096","样本 5 · 30 秒"],["2636","样本 6 · 30 秒"]];
+const labels={blue_ring_state:"自身蓝圈位置",red_ring_state:"敌方红圈位置",joystick_visual_change:"摇杆视觉变化",attack_visual_change:"普攻视觉变化",skill_1_visual_change:"技能 1 视觉变化",skill_2_visual_change:"技能 2 视觉变化",substitution_visual_change:"替身视觉变化",summon_or_secret_visual_change:"通灵/奥义视觉变化",impact_or_damage_flash:"受击/伤害闪光",health_bar_change:"血条变化"};
 let events=[],selected=null,currentVideoName="";
 const setStatus=message=>status.textContent=message;
 const formatTime=value=>Number(value).toFixed(2)+"s";
@@ -26,22 +27,16 @@ function render(){
   summary.textContent=events.length+" 条候选事件 · 未审核 "+(counts.unreviewed||0)+" · 接受 "+(counts.accepted||0)+" · 拒绝 "+(counts.rejected||0);
   events.forEach((event,index)=>{
     const row=document.createElement("div");
+    const duration=Number(event.evidence&&event.evidence.duration_s||0);
+    const detail=event.source+" · score "+Number(event.score).toFixed(2)+(duration?(" · "+duration.toFixed(2)+"s"):"");
     row.className="event "+(event.decision||"")+" "+(selected===index?"active":"");
-    row.innerHTML='<span class="time">'+formatTime(event.timestamp_s)+'</span><span>'+event.event+'<br><span class="score">'+event.source+" · score "+Number(event.score).toFixed(2)+'</span></span><span>'+(event.decision==="accepted"?"✓":event.decision==="rejected"?"×":"·")+"</span>";
+    row.innerHTML='<span class="time">'+formatTime(event.timestamp_s)+'</span><span>'+(labels[event.event]||event.event)+'<br><span class="score">'+detail+'</span></span><span>'+(event.decision==="accepted"?"✓":event.decision==="rejected"?"×":"·")+"</span>";
     row.onclick=()=>{selected=index;video.currentTime=event.timestamp_s;video.pause();render()};
     list.append(row);
   });
 }
-async function setReport(report){
-  events=(report.events||[]).map(item=>Object.assign({},item,{decision:null}));
-  selected=events.length?0:null;render();
-}
-async function loadSample(id){
-  currentVideoName=id+".mp4";video.src=id+".mp4";video.load();
-  document.querySelectorAll(".sample").forEach(button=>button.classList.toggle("active",button.dataset.id===id));
-  setStatus("正在载入样本 "+id+"…");
-  try{const response=await fetch("reports/"+id+".json");if(!response.ok)throw new Error("report");await setReport(await response.json());setStatus("已载入预设样本 "+id+"。")}catch{events=[];selected=null;render();setStatus("录像已载入，但对应报告暂不可用。");}
-}
+async function setReport(report){events=(report.events||[]).map(item=>Object.assign({},item,{decision:null}));selected=events.length?0:null;render();}
+async function loadSample(id){currentVideoName=id+".mp4";video.src=id+".mp4";video.load();document.querySelectorAll(".sample").forEach(button=>button.classList.toggle("active",button.dataset.id===id));setStatus("正在载入样本 "+id+"…");try{const response=await fetch("reports/"+id+".json");if(!response.ok)throw new Error("report");await setReport(await response.json());setStatus("已载入预设样本 "+id+"。");}catch{events=[];selected=null;render();setStatus("录像已载入，但对应报告暂不可用。");}}
 samples.forEach(([id,label])=>{const button=document.createElement("button");button.className="sample";button.dataset.id=id;button.textContent=label;button.onclick=()=>loadSample(id);samplesBox.append(button);});
 document.querySelector("#videoInput").onchange=event=>{const file=event.target.files[0];if(!file)return;currentVideoName=file.name;video.src=URL.createObjectURL(file);document.querySelectorAll(".sample").forEach(button=>button.classList.remove("active"));setStatus("已载入本地录像："+file.name);};
 document.querySelector("#reportInput").onchange=async event=>{const file=event.target.files[0];if(!file)return;try{await setReport(JSON.parse(await file.text()));setStatus("已载入本地报告："+file.name);}catch{setStatus("报告不是有效 JSON。");}};
