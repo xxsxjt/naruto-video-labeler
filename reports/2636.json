@@ -1,46 +1,54 @@
 {
   "video": {
-    "path": "../upload/2636.mp4",
+    "filename": "2636.mp4",
     "width": 2400,
     "height": 1080,
     "fps": 29.97002997002997,
     "duration_s": 30.253444
   },
-  "sample_fps": 4.0,
+  "sample_fps": 12.0,
   "event_counts": {
-    "blue_ring_candidate": 31,
-    "red_ring_candidate": 31,
-    "skill_1_visual_change": 36,
-    "skill_2_visual_change": 13,
-    "impact_or_damage_flash": 44,
-    "substitution_visual_change": 17,
-    "summon_or_secret_visual_change": 11,
-    "attack_visual_change": 1
+    "blue_ring_state": 43,
+    "red_ring_state": 33,
+    "impact_or_damage_flash": 14,
+    "substitution_visual_change": 6,
+    "summon_or_secret_visual_change": 3,
+    "skill_1_visual_change": 6
   },
   "events": [
     {
       "timestamp_s": 0.0,
-      "event": "blue_ring_candidate",
+      "event": "blue_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.6607390927147555,
-        "arena_y": 0.4703783589442359
+        "arena_x": 0.5363357455485436,
+        "arena_y": 0.4769578756406973
       }
     },
     {
       "timestamp_s": 0.0,
-      "event": "red_ring_candidate",
+      "event": "red_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.3577260858545296,
-        "arena_y": 0.566589971655132
+        "arena_x": 0.5623448736859126,
+        "arena_y": 0.3572234707417122
       }
     },
     {
       "timestamp_s": 1.0,
-      "event": "blue_ring_candidate",
+      "event": "red_ring_state",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.4923565004616878,
+        "arena_y": 0.4178889414598477
+      }
+    },
+    {
+      "timestamp_s": 1.0833333333333333,
+      "event": "blue_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
@@ -49,874 +57,563 @@
       }
     },
     {
-      "timestamp_s": 1.0,
-      "event": "red_ring_candidate",
-      "score": 1.0,
-      "source": "arena",
-      "evidence": {
-        "arena_x": 0.3577260858545296,
-        "arena_y": 0.566589971655132
-      }
-    },
-    {
-      "timestamp_s": 1.25,
-      "event": "skill_1_visual_change",
-      "score": 43.400050765385814,
-      "source": "skill_1",
-      "evidence": {
-        "mean_pixel_delta": 43.400050765385814
-      }
-    },
-    {
-      "timestamp_s": 1.25,
-      "event": "skill_2_visual_change",
-      "score": 29.129533136240454,
-      "source": "skill_2",
-      "evidence": {
-        "mean_pixel_delta": 29.129533136240454
-      }
-    },
-    {
-      "timestamp_s": 1.25,
+      "timestamp_s": 1.0833333333333333,
       "event": "impact_or_damage_flash",
-      "score": 49.56231045356951,
+      "score": 38.15837974145643,
       "source": "impact_area",
       "evidence": {
-        "mean_pixel_delta": 49.56231045356951
+        "mean_pixel_delta": 38.15837974145643,
+        "segment_start_s": 1.0833333333333333,
+        "segment_end_s": 1.0833333333333333,
+        "duration_s": 0.0,
+        "observations": 1.0
       }
     },
     {
-      "timestamp_s": 1.5,
-      "event": "skill_1_visual_change",
-      "score": 32.893581432885554,
-      "source": "skill_1",
-      "evidence": {
-        "mean_pixel_delta": 32.893581432885554
-      }
-    },
-    {
-      "timestamp_s": 2.0,
-      "event": "skill_1_visual_change",
-      "score": 32.07532802249297,
-      "source": "skill_1",
-      "evidence": {
-        "mean_pixel_delta": 32.07532802249297
-      }
-    },
-    {
-      "timestamp_s": 2.0,
-      "event": "blue_ring_candidate",
+      "timestamp_s": 1.6666666666666667,
+      "event": "red_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.8772077999051683,
-        "arena_y": 0.6079025923016496
+        "arena_x": 0.4406027525416313,
+        "arena_y": 0.6211211726240258
       }
     },
     {
-      "timestamp_s": 2.0,
-      "event": "red_ring_candidate",
+      "timestamp_s": 1.75,
+      "event": "blue_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.44677662052753003,
-        "arena_y": 0.5780007002167362
+        "arena_x": 0.8764715130604275,
+        "arena_y": 0.6188615617295076
       }
     },
     {
-      "timestamp_s": 3.0,
-      "event": "blue_ring_candidate",
+      "timestamp_s": 2.5,
+      "event": "blue_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.8792813359440718,
-        "arena_y": 0.6151844189791247
+        "arena_x": 0.8339310237228913,
+        "arena_y": 0.39293743108010626
       }
     },
     {
-      "timestamp_s": 3.0,
-      "event": "red_ring_candidate",
+      "timestamp_s": 3.1666666666666665,
+      "event": "blue_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.4590506846360539,
-        "arena_y": 0.5838616479800862
+        "arena_x": 0.8801726536944492,
+        "arena_y": 0.6152757085158093
       }
     },
     {
-      "timestamp_s": 3.75,
-      "event": "skill_1_visual_change",
-      "score": 43.857752785587834,
-      "source": "skill_1",
+      "timestamp_s": 3.5,
+      "event": "red_ring_state",
+      "score": 1.0,
+      "source": "arena",
       "evidence": {
-        "mean_pixel_delta": 43.857752785587834
+        "arena_x": 0.37199072727396204,
+        "arena_y": 0.5949253894013218
       }
     },
     {
-      "timestamp_s": 4.0,
-      "event": "skill_1_visual_change",
-      "score": 62.769954701655735,
-      "source": "skill_1",
+      "timestamp_s": 3.8333333333333335,
+      "event": "blue_ring_state",
+      "score": 1.0,
+      "source": "arena",
       "evidence": {
-        "mean_pixel_delta": 62.769954701655735
+        "arena_x": 0.8183743950543623,
+        "arena_y": 0.5709253553236205
       }
     },
     {
-      "timestamp_s": 4.0,
-      "event": "skill_2_visual_change",
-      "score": 38.190872135994084,
-      "source": "skill_2",
-      "evidence": {
-        "mean_pixel_delta": 38.190872135994084
-      }
-    },
-    {
-      "timestamp_s": 4.0,
+      "timestamp_s": 4.166666666666666,
       "event": "substitution_visual_change",
-      "score": 87.62757081120483,
+      "score": 84.90270618556701,
       "source": "substitution",
       "evidence": {
-        "mean_pixel_delta": 87.62757081120483
+        "mean_pixel_delta": 84.90270618556701,
+        "segment_start_s": 4.083333333333333,
+        "segment_end_s": 4.25,
+        "duration_s": 0.16666666666666696,
+        "observations": 3.0
       }
     },
     {
-      "timestamp_s": 4.0,
+      "timestamp_s": 4.166666666666666,
       "event": "summon_or_secret_visual_change",
-      "score": 71.17704720616571,
+      "score": 70.28989242132306,
       "source": "summon_or_secret",
       "evidence": {
-        "mean_pixel_delta": 71.17704720616571
+        "mean_pixel_delta": 70.28989242132306,
+        "segment_start_s": 4.083333333333333,
+        "segment_end_s": 4.25,
+        "duration_s": 0.16666666666666696,
+        "observations": 2.0
       }
     },
     {
-      "timestamp_s": 4.0,
-      "event": "blue_ring_candidate",
-      "score": 0.41277284747434,
-      "source": "arena",
-      "evidence": {
-        "arena_x": 0.9577286185065282,
-        "arena_y": 0.7081719836514746
-      }
-    },
-    {
-      "timestamp_s": 4.0,
-      "event": "red_ring_candidate",
+      "timestamp_s": 4.166666666666667,
+      "event": "red_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.26418562647127414,
-        "arena_y": 0.5831575281930444
+        "arena_x": 0.2150761443623173,
+        "arena_y": 0.5807697386355892
       }
     },
     {
-      "timestamp_s": 4.0,
+      "timestamp_s": 4.291666666666666,
       "event": "impact_or_damage_flash",
-      "score": 66.66591854535694,
+      "score": 65.83275239309357,
       "source": "impact_area",
       "evidence": {
-        "mean_pixel_delta": 66.66591854535694
-      }
-    },
-    {
-      "timestamp_s": 4.25,
-      "event": "substitution_visual_change",
-      "score": 37.693591846298034,
-      "source": "substitution",
-      "evidence": {
-        "mean_pixel_delta": 37.693591846298034
-      }
-    },
-    {
-      "timestamp_s": 4.25,
-      "event": "summon_or_secret_visual_change",
-      "score": 28.996491650610146,
-      "source": "summon_or_secret",
-      "evidence": {
-        "mean_pixel_delta": 28.996491650610146
-      }
-    },
-    {
-      "timestamp_s": 4.25,
-      "event": "impact_or_damage_flash",
-      "score": 46.060119766505636,
-      "source": "impact_area",
-      "evidence": {
-        "mean_pixel_delta": 46.060119766505636
+        "mean_pixel_delta": 65.83275239309357,
+        "segment_start_s": 4.083333333333333,
+        "segment_end_s": 4.5,
+        "duration_s": 0.41666666666666696,
+        "observations": 4.0
       }
     },
     {
       "timestamp_s": 4.5,
-      "event": "skill_1_visual_change",
-      "score": 29.897505987712172,
-      "source": "skill_1",
-      "evidence": {
-        "mean_pixel_delta": 29.897505987712172
-      }
-    },
-    {
-      "timestamp_s": 4.5,
-      "event": "substitution_visual_change",
-      "score": 48.14339268978444,
-      "source": "substitution",
-      "evidence": {
-        "mean_pixel_delta": 48.14339268978444
-      }
-    },
-    {
-      "timestamp_s": 4.5,
-      "event": "summon_or_secret_visual_change",
-      "score": 41.22485549132948,
-      "source": "summon_or_secret",
-      "evidence": {
-        "mean_pixel_delta": 41.22485549132948
-      }
-    },
-    {
-      "timestamp_s": 4.5,
-      "event": "impact_or_damage_flash",
-      "score": 52.66117932546073,
-      "source": "impact_area",
-      "evidence": {
-        "mean_pixel_delta": 52.66117932546073
-      }
-    },
-    {
-      "timestamp_s": 4.75,
-      "event": "skill_1_visual_change",
-      "score": 46.87511715089035,
-      "source": "skill_1",
-      "evidence": {
-        "mean_pixel_delta": 46.87511715089035
-      }
-    },
-    {
-      "timestamp_s": 4.75,
-      "event": "impact_or_damage_flash",
-      "score": 51.24784565664699,
-      "source": "impact_area",
-      "evidence": {
-        "mean_pixel_delta": 51.24784565664699
-      }
-    },
-    {
-      "timestamp_s": 5.0,
-      "event": "blue_ring_candidate",
+      "event": "blue_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.3809022181680683,
-        "arena_y": 0.4912674490548808
+        "arena_x": 0.6171696961563081,
+        "arena_y": 0.39114105019400913
       }
     },
     {
-      "timestamp_s": 5.0,
-      "event": "red_ring_candidate",
+      "timestamp_s": 4.833333333333333,
+      "event": "red_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.6777141854273455,
-        "arena_y": 0.6469084534225424
+        "arena_x": 0.6102318095235695,
+        "arena_y": 0.6456220158301943
       }
     },
     {
-      "timestamp_s": 6.0,
-      "event": "blue_ring_candidate",
+      "timestamp_s": 5.166666666666667,
+      "event": "blue_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.4892065752064864,
-        "arena_y": 0.6228661415097422
+        "arena_x": 0.4762633898033737,
+        "arena_y": 0.5695032109243765
       }
     },
     {
-      "timestamp_s": 6.0,
-      "event": "red_ring_candidate",
+      "timestamp_s": 5.5,
+      "event": "red_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.65259198840751,
-        "arena_y": 0.5933719955425647
+        "arena_x": 0.6383167907577477,
+        "arena_y": 0.588367139602517
       }
     },
     {
-      "timestamp_s": 7.0,
-      "event": "blue_ring_candidate",
+      "timestamp_s": 5.833333333333333,
+      "event": "blue_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.5490794348411501,
-        "arena_y": 0.5978635661418187
+        "arena_x": 0.4306216738931037,
+        "arena_y": 0.4434948331356937
       }
     },
     {
-      "timestamp_s": 7.0,
-      "event": "red_ring_candidate",
+      "timestamp_s": 6.5,
+      "event": "blue_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.6143176416380914,
-        "arena_y": 0.5958986339826376
+        "arena_x": 0.4881457304737298,
+        "arena_y": 0.6223292552853339
       }
     },
     {
-      "timestamp_s": 7.25,
-      "event": "impact_or_damage_flash",
-      "score": 65.76509102701736,
-      "source": "impact_area",
+      "timestamp_s": 7.166666666666667,
+      "event": "blue_ring_state",
+      "score": 0.8627330688897853,
+      "source": "arena",
       "evidence": {
-        "mean_pixel_delta": 65.76509102701736
+        "arena_x": 0.5854687130916939,
+        "arena_y": 0.6139043802014362
       }
     },
     {
-      "timestamp_s": 7.5,
-      "event": "substitution_visual_change",
-      "score": 37.46188691034052,
-      "source": "substitution",
+      "timestamp_s": 7.333333333333333,
+      "event": "red_ring_state",
+      "score": 1.0,
+      "source": "arena",
       "evidence": {
-        "mean_pixel_delta": 37.46188691034052
+        "arena_x": 0.8026126893690184,
+        "arena_y": 0.5963168771526981
       }
     },
     {
       "timestamp_s": 7.5,
       "event": "impact_or_damage_flash",
-      "score": 51.0921620594024,
+      "score": 71.21240886115584,
       "source": "impact_area",
       "evidence": {
-        "mean_pixel_delta": 51.0921620594024
+        "mean_pixel_delta": 71.21240886115584,
+        "segment_start_s": 7.333333333333333,
+        "segment_end_s": 7.666666666666667,
+        "duration_s": 0.3333333333333339,
+        "observations": 3.0
       }
     },
     {
-      "timestamp_s": 7.75,
-      "event": "skill_1_visual_change",
-      "score": 37.23796600020827,
-      "source": "skill_1",
-      "evidence": {
-        "mean_pixel_delta": 37.23796600020827
-      }
-    },
-    {
-      "timestamp_s": 7.75,
+      "timestamp_s": 7.541666666666667,
       "event": "substitution_visual_change",
-      "score": 36.51711053837342,
+      "score": 33.42773091742164,
       "source": "substitution",
       "evidence": {
-        "mean_pixel_delta": 36.51711053837342
+        "mean_pixel_delta": 33.42773091742164,
+        "segment_start_s": 7.416666666666667,
+        "segment_end_s": 7.666666666666667,
+        "duration_s": 0.25,
+        "observations": 2.0
       }
     },
     {
-      "timestamp_s": 7.75,
-      "event": "impact_or_damage_flash",
-      "score": 46.02937354625156,
-      "source": "impact_area",
-      "evidence": {
-        "mean_pixel_delta": 46.02937354625156
-      }
-    },
-    {
-      "timestamp_s": 8.0,
-      "event": "blue_ring_candidate",
+      "timestamp_s": 7.833333333333333,
+      "event": "blue_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.8825447353035091,
-        "arena_y": 0.5769140510108742
+        "arena_x": 0.7429326291937273,
+        "arena_y": 0.4519424376130256
       }
     },
     {
       "timestamp_s": 8.0,
-      "event": "red_ring_candidate",
+      "event": "red_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.45625479072809566,
-        "arena_y": 0.6360037381279916
-      }
-    },
-    {
-      "timestamp_s": 8.0,
-      "event": "impact_or_damage_flash",
-      "score": 37.53150496511004,
-      "source": "impact_area",
-      "evidence": {
-        "mean_pixel_delta": 37.53150496511004
-      }
-    },
-    {
-      "timestamp_s": 8.25,
-      "event": "skill_1_visual_change",
-      "score": 29.246784858898263,
-      "source": "skill_1",
-      "evidence": {
-        "mean_pixel_delta": 29.246784858898263
+        "arena_x": 0.4965165595381936,
+        "arena_y": 0.633578543200377
       }
     },
     {
       "timestamp_s": 8.5,
-      "event": "skill_1_visual_change",
-      "score": 37.0525877330001,
-      "source": "skill_1",
-      "evidence": {
-        "mean_pixel_delta": 37.0525877330001
-      }
-    },
-    {
-      "timestamp_s": 9.0,
-      "event": "blue_ring_candidate",
+      "event": "blue_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.8320415412862168,
-        "arena_y": 0.40477631927088187
+        "arena_x": 0.8649507373467389,
+        "arena_y": 0.6149001134756423
       }
     },
     {
-      "timestamp_s": 9.0,
-      "event": "red_ring_candidate",
+      "timestamp_s": 8.666666666666666,
+      "event": "red_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.4299529106694406,
-        "arena_y": 0.5887018494540737
+        "arena_x": 0.45798739974539654,
+        "arena_y": 0.5832598222459118
       }
     },
     {
-      "timestamp_s": 10.0,
-      "event": "blue_ring_candidate",
-      "score": 0.8903959930079333,
-      "source": "arena",
-      "evidence": {
-        "arena_x": 0.8921476927611898,
-        "arena_y": 0.7122188726025371
-      }
-    },
-    {
-      "timestamp_s": 10.0,
-      "event": "red_ring_candidate",
+      "timestamp_s": 9.166666666666666,
+      "event": "blue_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.45526824361406,
-        "arena_y": 0.5838747140701933
+        "arena_x": 0.8507056660386749,
+        "arena_y": 0.5146479781293753
+      }
+    },
+    {
+      "timestamp_s": 9.833333333333334,
+      "event": "blue_ring_state",
+      "score": 0.703548697951683,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.9189246358642138,
+        "arena_y": 0.7235813764147607
       }
     },
     {
       "timestamp_s": 10.25,
-      "event": "skill_1_visual_change",
-      "score": 72.49412943871707,
-      "source": "skill_1",
+      "event": "red_ring_state",
+      "score": 1.0,
+      "source": "arena",
       "evidence": {
-        "mean_pixel_delta": 72.49412943871707
+        "arena_x": 0.329610723792949,
+        "arena_y": 0.5539502193736974
       }
     },
     {
       "timestamp_s": 10.25,
       "event": "impact_or_damage_flash",
-      "score": 55.08152285739846,
+      "score": 52.313925791733766,
       "source": "impact_area",
       "evidence": {
-        "mean_pixel_delta": 55.08152285739846
+        "mean_pixel_delta": 52.313925791733766,
+        "segment_start_s": 10.25,
+        "segment_end_s": 10.25,
+        "duration_s": 0.0,
+        "observations": 1.0
+      }
+    },
+    {
+      "timestamp_s": 10.291666666666668,
+      "event": "skill_1_visual_change",
+      "score": 72.69227715297303,
+      "source": "skill_1",
+      "evidence": {
+        "mean_pixel_delta": 72.69227715297303,
+        "segment_start_s": 10.25,
+        "segment_end_s": 10.333333333333334,
+        "duration_s": 0.08333333333333393,
+        "observations": 2.0
       }
     },
     {
       "timestamp_s": 10.5,
-      "event": "skill_1_visual_change",
-      "score": 40.74700614391336,
-      "source": "skill_1",
-      "evidence": {
-        "mean_pixel_delta": 40.74700614391336
-      }
-    },
-    {
-      "timestamp_s": 10.5,
-      "event": "impact_or_damage_flash",
-      "score": 37.85200505457148,
-      "source": "impact_area",
-      "evidence": {
-        "mean_pixel_delta": 37.85200505457148
-      }
-    },
-    {
-      "timestamp_s": 10.75,
-      "event": "skill_1_visual_change",
-      "score": 30.03554227845465,
-      "source": "skill_1",
-      "evidence": {
-        "mean_pixel_delta": 30.03554227845465
-      }
-    },
-    {
-      "timestamp_s": 11.0,
-      "event": "blue_ring_candidate",
+      "event": "blue_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.7084013199516461,
-        "arena_y": 0.6046666981649669
+        "arena_x": 0.691834605932783,
+        "arena_y": 0.581110030619087
       }
     },
     {
-      "timestamp_s": 11.0,
-      "event": "red_ring_candidate",
+      "timestamp_s": 10.916666666666666,
+      "event": "red_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.4958624042524264,
-        "arena_y": 0.5927546907369136
+        "arena_x": 0.47038400688544224,
+        "arena_y": 0.6001632958476532
       }
     },
     {
-      "timestamp_s": 11.25,
-      "event": "impact_or_damage_flash",
-      "score": 39.80713566827697,
-      "source": "impact_area",
+      "timestamp_s": 11.166666666666666,
+      "event": "blue_ring_state",
+      "score": 0.8929872036215319,
+      "source": "arena",
       "evidence": {
-        "mean_pixel_delta": 39.80713566827697
+        "arena_x": 0.778035206212408,
+        "arena_y": 0.6113241337817227
       }
     },
     {
-      "timestamp_s": 11.5,
-      "event": "skill_1_visual_change",
-      "score": 31.539883369780277,
-      "source": "skill_1",
+      "timestamp_s": 11.583333333333334,
+      "event": "red_ring_state",
+      "score": 0.48553684281296217,
+      "source": "arena",
       "evidence": {
-        "mean_pixel_delta": 31.539883369780277
+        "arena_x": 0.5778550618987659,
+        "arena_y": 0.866370871733931
       }
     },
     {
-      "timestamp_s": 11.5,
+      "timestamp_s": 11.666666666666668,
       "event": "substitution_visual_change",
-      "score": 46.77369702176403,
+      "score": 31.700913776944706,
       "source": "substitution",
       "evidence": {
-        "mean_pixel_delta": 46.77369702176403
+        "mean_pixel_delta": 31.700913776944706,
+        "segment_start_s": 11.5,
+        "segment_end_s": 11.833333333333334,
+        "duration_s": 0.3333333333333339,
+        "observations": 3.0
       }
     },
     {
-      "timestamp_s": 11.5,
-      "event": "summon_or_secret_visual_change",
-      "score": 42.46665061014772,
-      "source": "summon_or_secret",
-      "evidence": {
-        "mean_pixel_delta": 42.46665061014772
-      }
-    },
-    {
-      "timestamp_s": 11.5,
+      "timestamp_s": 11.666666666666668,
       "event": "impact_or_damage_flash",
-      "score": 79.60769088835212,
+      "score": 93.77558149937377,
       "source": "impact_area",
       "evidence": {
-        "mean_pixel_delta": 79.60769088835212
+        "mean_pixel_delta": 93.77558149937377,
+        "segment_start_s": 11.5,
+        "segment_end_s": 11.833333333333334,
+        "duration_s": 0.3333333333333339,
+        "observations": 3.0
       }
     },
     {
-      "timestamp_s": 11.75,
-      "event": "skill_1_visual_change",
-      "score": 40.25786212641883,
-      "source": "skill_1",
-      "evidence": {
-        "mean_pixel_delta": 40.25786212641883
-      }
-    },
-    {
-      "timestamp_s": 11.75,
-      "event": "skill_2_visual_change",
-      "score": 37.847573293914756,
-      "source": "skill_2",
-      "evidence": {
-        "mean_pixel_delta": 37.847573293914756
-      }
-    },
-    {
-      "timestamp_s": 11.75,
-      "event": "substitution_visual_change",
-      "score": 40.770371238154745,
-      "source": "substitution",
-      "evidence": {
-        "mean_pixel_delta": 40.770371238154745
-      }
-    },
-    {
-      "timestamp_s": 11.75,
-      "event": "summon_or_secret_visual_change",
-      "score": 29.01983782915864,
-      "source": "summon_or_secret",
-      "evidence": {
-        "mean_pixel_delta": 29.01983782915864
-      }
-    },
-    {
-      "timestamp_s": 11.75,
-      "event": "impact_or_damage_flash",
-      "score": 50.51075382447665,
-      "source": "impact_area",
-      "evidence": {
-        "mean_pixel_delta": 50.51075382447665
-      }
-    },
-    {
-      "timestamp_s": 12.0,
-      "event": "skill_1_visual_change",
-      "score": 41.15967666354264,
-      "source": "skill_1",
-      "evidence": {
-        "mean_pixel_delta": 41.15967666354264
-      }
-    },
-    {
-      "timestamp_s": 12.0,
-      "event": "skill_2_visual_change",
-      "score": 35.769358216309435,
-      "source": "skill_2",
-      "evidence": {
-        "mean_pixel_delta": 35.769358216309435
-      }
-    },
-    {
-      "timestamp_s": 12.0,
-      "event": "blue_ring_candidate",
+      "timestamp_s": 11.833333333333334,
+      "event": "blue_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.8199654657055329,
-        "arena_y": 0.5247423049434258
-      }
-    },
-    {
-      "timestamp_s": 12.0,
-      "event": "red_ring_candidate",
-      "score": 1.0,
-      "source": "arena",
-      "evidence": {
-        "arena_x": 0.34833645611315195,
-        "arena_y": 0.6113816068124147
-      }
-    },
-    {
-      "timestamp_s": 12.0,
-      "event": "impact_or_damage_flash",
-      "score": 53.04553084183217,
-      "source": "impact_area",
-      "evidence": {
-        "mean_pixel_delta": 53.04553084183217
+        "arena_x": 0.6800460948759365,
+        "arena_y": 0.44552445625692755
       }
     },
     {
       "timestamp_s": 12.25,
-      "event": "skill_1_visual_change",
-      "score": 32.11793840466521,
-      "source": "skill_1",
-      "evidence": {
-        "mean_pixel_delta": 32.11793840466521
-      }
-    },
-    {
-      "timestamp_s": 13.0,
-      "event": "blue_ring_candidate",
+      "event": "red_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.8684592157813202,
-        "arena_y": 0.6094806060537585
+        "arena_x": 0.42589437084324344,
+        "arena_y": 0.5947947622424022
       }
     },
     {
-      "timestamp_s": 13.0,
-      "event": "red_ring_candidate",
+      "timestamp_s": 12.5,
+      "event": "blue_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.4448668649726004,
-        "arena_y": 0.5733558049626954
+        "arena_x": 0.8599434849510079,
+        "arena_y": 0.6382949539735123
       }
     },
     {
-      "timestamp_s": 14.0,
-      "event": "blue_ring_candidate",
-      "score": 0.6912929720765542,
-      "source": "arena",
-      "evidence": {
-        "arena_x": 0.9145654049855751,
-        "arena_y": 0.7264578737353653
-      }
-    },
-    {
-      "timestamp_s": 14.0,
-      "event": "red_ring_candidate",
+      "timestamp_s": 13.25,
+      "event": "blue_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.4566655738325658,
-        "arena_y": 0.569587870925599
+        "arena_x": 0.8380147017116386,
+        "arena_y": 0.4356700794378757
+      }
+    },
+    {
+      "timestamp_s": 13.916666666666666,
+      "event": "blue_ring_state",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.8771674380378869,
+        "arena_y": 0.6227123773733388
+      }
+    },
+    {
+      "timestamp_s": 14.458333333333332,
+      "event": "impact_or_damage_flash",
+      "score": 39.13900127482555,
+      "source": "impact_area",
+      "evidence": {
+        "mean_pixel_delta": 39.13900127482555,
+        "segment_start_s": 14.416666666666666,
+        "segment_end_s": 14.5,
+        "duration_s": 0.08333333333333393,
+        "observations": 2.0
+      }
+    },
+    {
+      "timestamp_s": 14.5,
+      "event": "red_ring_state",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.3971162344398986,
+        "arena_y": 0.5383811599708458
       }
     },
     {
       "timestamp_s": 14.5,
       "event": "skill_1_visual_change",
-      "score": 55.2528701968135,
+      "score": 68.26256768718109,
       "source": "skill_1",
       "evidence": {
-        "mean_pixel_delta": 55.2528701968135
+        "mean_pixel_delta": 68.26256768718109,
+        "segment_start_s": 14.416666666666666,
+        "segment_end_s": 14.583333333333334,
+        "duration_s": 0.16666666666666785,
+        "observations": 3.0
       }
     },
     {
-      "timestamp_s": 14.5,
-      "event": "impact_or_damage_flash",
-      "score": 55.39785180712113,
-      "source": "impact_area",
-      "evidence": {
-        "mean_pixel_delta": 55.39785180712113
-      }
-    },
-    {
-      "timestamp_s": 14.75,
-      "event": "impact_or_damage_flash",
-      "score": 37.5767187779567,
-      "source": "impact_area",
-      "evidence": {
-        "mean_pixel_delta": 37.5767187779567
-      }
-    },
-    {
-      "timestamp_s": 15.0,
-      "event": "skill_1_visual_change",
-      "score": 38.146009059668856,
-      "source": "skill_1",
-      "evidence": {
-        "mean_pixel_delta": 38.146009059668856
-      }
-    },
-    {
-      "timestamp_s": 15.0,
-      "event": "skill_2_visual_change",
-      "score": 28.838537817196354,
-      "source": "skill_2",
-      "evidence": {
-        "mean_pixel_delta": 28.838537817196354
-      }
-    },
-    {
-      "timestamp_s": 15.0,
-      "event": "blue_ring_candidate",
+      "timestamp_s": 14.583333333333334,
+      "event": "blue_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.6811179189688685,
-        "arena_y": 0.5326667241825555
+        "arena_x": 0.6907024085803156,
+        "arena_y": 0.5707116213104738
       }
     },
     {
-      "timestamp_s": 15.0,
-      "event": "red_ring_candidate",
+      "timestamp_s": 15.166666666666666,
+      "event": "red_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.5167792282046048,
-        "arena_y": 0.5744487863928663
+        "arena_x": 0.531498218403416,
+        "arena_y": 0.5983701683251518
       }
     },
     {
-      "timestamp_s": 15.0,
+      "timestamp_s": 15.416666666666666,
+      "event": "blue_ring_state",
+      "score": 0.8067068934606247,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.7430176562968037,
+        "arena_y": 0.6134885516855345
+      }
+    },
+    {
+      "timestamp_s": 15.583333333333332,
       "event": "impact_or_damage_flash",
-      "score": 41.85135645911612,
+      "score": 101.00148841474325,
       "source": "impact_area",
       "evidence": {
-        "mean_pixel_delta": 41.85135645911612
+        "mean_pixel_delta": 101.00148841474325,
+        "segment_start_s": 15.083333333333334,
+        "segment_end_s": 16.083333333333332,
+        "duration_s": 0.9999999999999982,
+        "observations": 6.0
       }
     },
     {
-      "timestamp_s": 15.25,
-      "event": "impact_or_damage_flash",
-      "score": 45.0356123635713,
-      "source": "impact_area",
-      "evidence": {
-        "mean_pixel_delta": 45.0356123635713
-      }
-    },
-    {
-      "timestamp_s": 15.5,
+      "timestamp_s": 15.708333333333332,
       "event": "substitution_visual_change",
-      "score": 34.882497656982196,
+      "score": 30.97823596792669,
       "source": "substitution",
       "evidence": {
-        "mean_pixel_delta": 34.882497656982196
+        "mean_pixel_delta": 30.97823596792669,
+        "segment_start_s": 15.5,
+        "segment_end_s": 15.916666666666666,
+        "duration_s": 0.4166666666666661,
+        "observations": 5.0
       }
     },
     {
-      "timestamp_s": 15.5,
-      "event": "summon_or_secret_visual_change",
-      "score": 37.56225112395633,
-      "source": "summon_or_secret",
+      "timestamp_s": 15.833333333333334,
+      "event": "red_ring_state",
+      "score": 1.0,
+      "source": "arena",
       "evidence": {
-        "mean_pixel_delta": 37.56225112395633
-      }
-    },
-    {
-      "timestamp_s": 15.5,
-      "event": "impact_or_damage_flash",
-      "score": 110.02295916085167,
-      "source": "impact_area",
-      "evidence": {
-        "mean_pixel_delta": 110.02295916085167
-      }
-    },
-    {
-      "timestamp_s": 15.75,
-      "event": "substitution_visual_change",
-      "score": 36.319984640216596,
-      "source": "substitution",
-      "evidence": {
-        "mean_pixel_delta": 36.319984640216596
-      }
-    },
-    {
-      "timestamp_s": 15.75,
-      "event": "summon_or_secret_visual_change",
-      "score": 34.60122029543995,
-      "source": "summon_or_secret",
-      "evidence": {
-        "mean_pixel_delta": 34.60122029543995
-      }
-    },
-    {
-      "timestamp_s": 15.75,
-      "event": "impact_or_damage_flash",
-      "score": 65.50026111558418,
-      "source": "impact_area",
-      "evidence": {
-        "mean_pixel_delta": 65.50026111558418
+        "arena_x": 0.48844842682136136,
+        "arena_y": 0.41342246002796734
       }
     },
     {
       "timestamp_s": 16.0,
       "event": "skill_1_visual_change",
-      "score": 44.39212355513902,
+      "score": 49.773397636155366,
       "source": "skill_1",
       "evidence": {
-        "mean_pixel_delta": 44.39212355513902
+        "mean_pixel_delta": 49.773397636155366,
+        "segment_start_s": 15.916666666666666,
+        "segment_end_s": 16.083333333333332,
+        "duration_s": 0.16666666666666607,
+        "observations": 3.0
       }
     },
     {
-      "timestamp_s": 16.0,
-      "event": "skill_2_visual_change",
-      "score": 32.29838630204484,
-      "source": "skill_2",
-      "evidence": {
-        "mean_pixel_delta": 32.29838630204484
-      }
-    },
-    {
-      "timestamp_s": 16.0,
-      "event": "substitution_visual_change",
-      "score": 34.01256768718109,
-      "source": "substitution",
-      "evidence": {
-        "mean_pixel_delta": 34.01256768718109
-      }
-    },
-    {
-      "timestamp_s": 16.0,
-      "event": "blue_ring_candidate",
+      "timestamp_s": 16.083333333333332,
+      "event": "blue_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
@@ -925,83 +622,38 @@
       }
     },
     {
-      "timestamp_s": 16.0,
-      "event": "red_ring_candidate",
+      "timestamp_s": 16.5,
+      "event": "red_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.3291510076905588,
-        "arena_y": 0.6617515753490718
-      }
-    },
-    {
-      "timestamp_s": 16.0,
-      "event": "impact_or_damage_flash",
-      "score": 52.29425545714797,
-      "source": "impact_area",
-      "evidence": {
-        "mean_pixel_delta": 52.29425545714797
-      }
-    },
-    {
-      "timestamp_s": 16.25,
-      "event": "skill_1_visual_change",
-      "score": 32.071618244298655,
-      "source": "skill_1",
-      "evidence": {
-        "mean_pixel_delta": 32.071618244298655
-      }
-    },
-    {
-      "timestamp_s": 16.25,
-      "event": "impact_or_damage_flash",
-      "score": 43.71612877974593,
-      "source": "impact_area",
-      "evidence": {
-        "mean_pixel_delta": 43.71612877974593
-      }
-    },
-    {
-      "timestamp_s": 16.5,
-      "event": "skill_1_visual_change",
-      "score": 30.260120535249403,
-      "source": "skill_1",
-      "evidence": {
-        "mean_pixel_delta": 30.260120535249403
+        "arena_x": 0.4396602275635688,
+        "arena_y": 0.6238567610988083
       }
     },
     {
       "timestamp_s": 16.75,
-      "event": "skill_1_visual_change",
-      "score": 39.31135452462772,
-      "source": "skill_1",
-      "evidence": {
-        "mean_pixel_delta": 39.31135452462772
-      }
-    },
-    {
-      "timestamp_s": 17.0,
-      "event": "blue_ring_candidate",
+      "event": "blue_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.8951462307022422,
-        "arena_y": 0.6077460752979343
+        "arena_x": 0.8828695779900884,
+        "arena_y": 0.6068203070523698
       }
     },
     {
-      "timestamp_s": 17.0,
-      "event": "red_ring_candidate",
+      "timestamp_s": 17.416666666666668,
+      "event": "blue_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.4530757968164208,
-        "arena_y": 0.5845545745726995
+        "arena_x": 0.8615104669039727,
+        "arena_y": 0.47858691387059454
       }
     },
     {
-      "timestamp_s": 18.0,
-      "event": "blue_ring_candidate",
+      "timestamp_s": 18.083333333333332,
+      "event": "blue_ring_state",
       "score": 0.6957050333916005,
       "source": "arena",
       "evidence": {
@@ -1010,173 +662,110 @@
       }
     },
     {
-      "timestamp_s": 18.0,
-      "event": "red_ring_candidate",
+      "timestamp_s": 18.5,
+      "event": "red_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.46077097920027504,
-        "arena_y": 0.5846869933096385
+        "arena_x": 0.3527750368533009,
+        "arena_y": 0.5607864925056785
       }
     },
     {
-      "timestamp_s": 18.5,
-      "event": "skill_1_visual_change",
-      "score": 71.90113766531292,
-      "source": "skill_1",
-      "evidence": {
-        "mean_pixel_delta": 71.90113766531292
-      }
-    },
-    {
-      "timestamp_s": 18.5,
-      "event": "skill_2_visual_change",
-      "score": 29.114578713968957,
-      "source": "skill_2",
-      "evidence": {
-        "mean_pixel_delta": 29.114578713968957
-      }
-    },
-    {
-      "timestamp_s": 18.5,
+      "timestamp_s": 18.541666666666664,
       "event": "impact_or_damage_flash",
-      "score": 53.98805298353909,
+      "score": 40.76690541689032,
       "source": "impact_area",
       "evidence": {
-        "mean_pixel_delta": 53.98805298353909
+        "mean_pixel_delta": 40.76690541689032,
+        "segment_start_s": 18.5,
+        "segment_end_s": 18.583333333333332,
+        "duration_s": 0.08333333333333215,
+        "observations": 2.0
+      }
+    },
+    {
+      "timestamp_s": 18.583333333333336,
+      "event": "skill_1_visual_change",
+      "score": 75.89457721545351,
+      "source": "skill_1",
+      "evidence": {
+        "mean_pixel_delta": 75.89457721545351,
+        "segment_start_s": 18.5,
+        "segment_end_s": 18.666666666666668,
+        "duration_s": 0.16666666666666785,
+        "observations": 2.0
       }
     },
     {
       "timestamp_s": 18.75,
-      "event": "skill_1_visual_change",
-      "score": 33.61726804123711,
-      "source": "skill_1",
-      "evidence": {
-        "mean_pixel_delta": 33.61726804123711
-      }
-    },
-    {
-      "timestamp_s": 18.75,
-      "event": "impact_or_damage_flash",
-      "score": 35.53290447754518,
-      "source": "impact_area",
-      "evidence": {
-        "mean_pixel_delta": 35.53290447754518
-      }
-    },
-    {
-      "timestamp_s": 19.0,
-      "event": "blue_ring_candidate",
+      "event": "blue_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.6942712805735536,
-        "arena_y": 0.6279220499286813
+        "arena_x": 0.7034819553787611,
+        "arena_y": 0.5686930626006951
       }
     },
     {
-      "timestamp_s": 19.0,
-      "event": "red_ring_candidate",
+      "timestamp_s": 19.166666666666668,
+      "event": "red_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.43569463383270557,
-        "arena_y": 0.5396570720860681
+        "arena_x": 0.47335523767815435,
+        "arena_y": 0.5575975220623075
       }
     },
     {
-      "timestamp_s": 19.25,
+      "timestamp_s": 19.416666666666668,
+      "event": "blue_ring_state",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.6490370477099673,
+        "arena_y": 0.6085577188607239
+      }
+    },
+    {
+      "timestamp_s": 19.458333333333336,
       "event": "impact_or_damage_flash",
-      "score": 36.89436169261049,
+      "score": 60.89362028090893,
       "source": "impact_area",
       "evidence": {
-        "mean_pixel_delta": 36.89436169261049
+        "mean_pixel_delta": 60.89362028090893,
+        "segment_start_s": 19.416666666666668,
+        "segment_end_s": 19.5,
+        "duration_s": 0.08333333333333215,
+        "observations": 2.0
       }
     },
     {
-      "timestamp_s": 19.5,
+      "timestamp_s": 19.708333333333336,
       "event": "skill_1_visual_change",
-      "score": 70.97362152452358,
+      "score": 57.73969072164948,
       "source": "skill_1",
       "evidence": {
-        "mean_pixel_delta": 70.97362152452358
+        "mean_pixel_delta": 57.73969072164948,
+        "segment_start_s": 19.5,
+        "segment_end_s": 19.916666666666668,
+        "duration_s": 0.41666666666666785,
+        "observations": 3.0
       }
     },
     {
-      "timestamp_s": 19.5,
-      "event": "skill_2_visual_change",
-      "score": 28.378171963537817,
-      "source": "skill_2",
+      "timestamp_s": 19.833333333333332,
+      "event": "red_ring_state",
+      "score": 1.0,
+      "source": "arena",
       "evidence": {
-        "mean_pixel_delta": 28.378171963537817
+        "arena_x": 0.33666029142231135,
+        "arena_y": 0.550574715251669
       }
     },
     {
-      "timestamp_s": 19.5,
-      "event": "substitution_visual_change",
-      "score": 35.954415286889514,
-      "source": "substitution",
-      "evidence": {
-        "mean_pixel_delta": 35.954415286889514
-      }
-    },
-    {
-      "timestamp_s": 19.5,
-      "event": "summon_or_secret_visual_change",
-      "score": 30.132064868336546,
-      "source": "summon_or_secret",
-      "evidence": {
-        "mean_pixel_delta": 30.132064868336546
-      }
-    },
-    {
-      "timestamp_s": 19.5,
-      "event": "impact_or_damage_flash",
-      "score": 54.33891293165146,
-      "source": "impact_area",
-      "evidence": {
-        "mean_pixel_delta": 54.33891293165146
-      }
-    },
-    {
-      "timestamp_s": 19.75,
-      "event": "skill_1_visual_change",
-      "score": 31.35939940643549,
-      "source": "skill_1",
-      "evidence": {
-        "mean_pixel_delta": 31.35939940643549
-      }
-    },
-    {
-      "timestamp_s": 19.75,
-      "event": "impact_or_damage_flash",
-      "score": 35.66686348183933,
-      "source": "impact_area",
-      "evidence": {
-        "mean_pixel_delta": 35.66686348183933
-      }
-    },
-    {
-      "timestamp_s": 20.0,
-      "event": "skill_1_visual_change",
-      "score": 49.65530303030303,
-      "source": "skill_1",
-      "evidence": {
-        "mean_pixel_delta": 49.65530303030303
-      }
-    },
-    {
-      "timestamp_s": 20.0,
-      "event": "skill_2_visual_change",
-      "score": 31.209109386548413,
-      "source": "skill_2",
-      "evidence": {
-        "mean_pixel_delta": 31.209109386548413
-      }
-    },
-    {
-      "timestamp_s": 20.0,
-      "event": "blue_ring_candidate",
+      "timestamp_s": 20.083333333333332,
+      "event": "blue_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
@@ -1185,63 +774,18 @@
       }
     },
     {
-      "timestamp_s": 20.0,
-      "event": "red_ring_candidate",
+      "timestamp_s": 20.666666666666668,
+      "event": "red_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.40861860309261544,
-        "arena_y": 0.5781420139955918
+        "arena_x": 0.41867320051885887,
+        "arena_y": 0.5731697896980731
       }
     },
     {
-      "timestamp_s": 21.0,
-      "event": "attack_visual_change",
-      "score": 29.61230129912047,
-      "source": "attack",
-      "evidence": {
-        "mean_pixel_delta": 29.61230129912047
-      }
-    },
-    {
-      "timestamp_s": 21.0,
-      "event": "skill_1_visual_change",
-      "score": 86.54016973862335,
-      "source": "skill_1",
-      "evidence": {
-        "mean_pixel_delta": 86.54016973862335
-      }
-    },
-    {
-      "timestamp_s": 21.0,
-      "event": "skill_2_visual_change",
-      "score": 38.27533259423503,
-      "source": "skill_2",
-      "evidence": {
-        "mean_pixel_delta": 38.27533259423503
-      }
-    },
-    {
-      "timestamp_s": 21.0,
-      "event": "substitution_visual_change",
-      "score": 86.63046704154952,
-      "source": "substitution",
-      "evidence": {
-        "mean_pixel_delta": 86.63046704154952
-      }
-    },
-    {
-      "timestamp_s": 21.0,
-      "event": "summon_or_secret_visual_change",
-      "score": 62.56482819524727,
-      "source": "summon_or_secret",
-      "evidence": {
-        "mean_pixel_delta": 62.56482819524727
-      }
-    },
-    {
-      "timestamp_s": 21.0,
-      "event": "blue_ring_candidate",
+      "timestamp_s": 21.083333333333332,
+      "event": "blue_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
@@ -1250,118 +794,67 @@
       }
     },
     {
-      "timestamp_s": 21.0,
-      "event": "red_ring_candidate",
-      "score": 1.0,
-      "source": "arena",
-      "evidence": {
-        "arena_x": 0.22872284309709276,
-        "arena_y": 0.5734106163114047
-      }
-    },
-    {
-      "timestamp_s": 21.0,
-      "event": "impact_or_damage_flash",
-      "score": 54.67797794775452,
-      "source": "impact_area",
-      "evidence": {
-        "mean_pixel_delta": 54.67797794775452
-      }
-    },
-    {
-      "timestamp_s": 21.25,
+      "timestamp_s": 21.166666666666664,
       "event": "substitution_visual_change",
-      "score": 58.059675361866084,
+      "score": 75.66134280953868,
       "source": "substitution",
       "evidence": {
-        "mean_pixel_delta": 58.059675361866084
+        "mean_pixel_delta": 75.66134280953868,
+        "segment_start_s": 21.0,
+        "segment_end_s": 21.333333333333332,
+        "duration_s": 0.33333333333333215,
+        "observations": 4.0
       }
     },
     {
-      "timestamp_s": 21.25,
+      "timestamp_s": 21.166666666666664,
       "event": "summon_or_secret_visual_change",
-      "score": 54.73606294155427,
+      "score": 68.43706647398844,
       "source": "summon_or_secret",
       "evidence": {
-        "mean_pixel_delta": 54.73606294155427
+        "mean_pixel_delta": 68.43706647398844,
+        "segment_start_s": 21.0,
+        "segment_end_s": 21.333333333333332,
+        "duration_s": 0.33333333333333215,
+        "observations": 2.0
       }
     },
     {
-      "timestamp_s": 21.25,
+      "timestamp_s": 21.208333333333336,
       "event": "impact_or_damage_flash",
-      "score": 51.00544540615495,
+      "score": 52.90188987296475,
       "source": "impact_area",
       "evidence": {
-        "mean_pixel_delta": 51.00544540615495
+        "mean_pixel_delta": 52.90188987296475,
+        "segment_start_s": 21.0,
+        "segment_end_s": 21.416666666666668,
+        "duration_s": 0.41666666666666785,
+        "observations": 3.0
       }
     },
     {
-      "timestamp_s": 21.5,
-      "event": "skill_1_visual_change",
-      "score": 52.35876809330418,
-      "source": "skill_1",
-      "evidence": {
-        "mean_pixel_delta": 52.35876809330418
-      }
-    },
-    {
-      "timestamp_s": 21.5,
-      "event": "skill_2_visual_change",
-      "score": 30.88539664942104,
-      "source": "skill_2",
-      "evidence": {
-        "mean_pixel_delta": 30.88539664942104
-      }
-    },
-    {
-      "timestamp_s": 21.5,
-      "event": "substitution_visual_change",
-      "score": 30.635179110694576,
-      "source": "substitution",
-      "evidence": {
-        "mean_pixel_delta": 30.635179110694576
-      }
-    },
-    {
-      "timestamp_s": 21.5,
-      "event": "impact_or_damage_flash",
-      "score": 45.373901301663984,
-      "source": "impact_area",
-      "evidence": {
-        "mean_pixel_delta": 45.373901301663984
-      }
-    },
-    {
-      "timestamp_s": 21.75,
-      "event": "skill_1_visual_change",
-      "score": 28.527523950848693,
-      "source": "skill_1",
-      "evidence": {
-        "mean_pixel_delta": 28.527523950848693
-      }
-    },
-    {
-      "timestamp_s": 21.75,
-      "event": "impact_or_damage_flash",
-      "score": 35.80875044730721,
-      "source": "impact_area",
-      "evidence": {
-        "mean_pixel_delta": 35.80875044730721
-      }
-    },
-    {
-      "timestamp_s": 22.0,
-      "event": "blue_ring_candidate",
+      "timestamp_s": 21.416666666666668,
+      "event": "red_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.4746792412555042,
-        "arena_y": 0.5859499458665224
+        "arena_x": 0.37712142247748875,
+        "arena_y": 0.665247847049605
       }
     },
     {
-      "timestamp_s": 22.0,
-      "event": "red_ring_candidate",
+      "timestamp_s": 21.75,
+      "event": "blue_ring_state",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.3824291446489676,
+        "arena_y": 0.5418810721892003
+      }
+    },
+    {
+      "timestamp_s": 22.083333333333332,
+      "event": "red_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
@@ -1370,121 +863,107 @@
       }
     },
     {
-      "timestamp_s": 23.0,
-      "event": "blue_ring_candidate",
+      "timestamp_s": 22.416666666666668,
+      "event": "blue_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.5213193176434264,
-        "arena_y": 0.6072150572722365
+        "arena_x": 0.5050042567351489,
+        "arena_y": 0.6108662635018066
       }
     },
     {
-      "timestamp_s": 23.0,
-      "event": "red_ring_candidate",
+      "timestamp_s": 23.166666666666668,
+      "event": "red_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.5917951401018207,
-        "arena_y": 0.6066275091161465
+        "arena_x": 0.5809872496041499,
+        "arena_y": 0.6018258961508104
       }
     },
     {
-      "timestamp_s": 24.0,
-      "event": "blue_ring_candidate",
+      "timestamp_s": 23.5,
+      "event": "blue_ring_state",
+      "score": 0.5880647438483259,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.7382422615541586,
+        "arena_y": 0.7244984438294416
+      }
+    },
+    {
+      "timestamp_s": 24.166666666666668,
+      "event": "blue_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.5208463654458579,
-        "arena_y": 0.5615726318441449
+        "arena_x": 0.515862004191032,
+        "arena_y": 0.640361614533826
       }
     },
     {
-      "timestamp_s": 24.0,
-      "event": "red_ring_candidate",
-      "score": 1.0,
-      "source": "arena",
-      "evidence": {
-        "arena_x": 0.5787486561022651,
-        "arena_y": 0.5865432167792559
-      }
-    },
-    {
-      "timestamp_s": 24.25,
+      "timestamp_s": 24.333333333333332,
       "event": "impact_or_damage_flash",
-      "score": 43.41265879405976,
+      "score": 36.9736698201825,
       "source": "impact_area",
       "evidence": {
-        "mean_pixel_delta": 43.41265879405976
+        "mean_pixel_delta": 36.9736698201825,
+        "segment_start_s": 24.333333333333332,
+        "segment_end_s": 24.333333333333332,
+        "duration_s": 0.0,
+        "observations": 1.0
       }
     },
     {
-      "timestamp_s": 24.5,
-      "event": "impact_or_damage_flash",
-      "score": 40.057341988727856,
-      "source": "impact_area",
+      "timestamp_s": 24.416666666666668,
+      "event": "red_ring_state",
+      "score": 1.0,
+      "source": "arena",
       "evidence": {
-        "mean_pixel_delta": 40.057341988727856
+        "arena_x": 0.5309788747075134,
+        "arena_y": 0.5697682881070483
       }
     },
     {
       "timestamp_s": 24.75,
-      "event": "substitution_visual_change",
-      "score": 29.159279652192023,
-      "source": "substitution",
+      "event": "impact_or_damage_flash",
+      "score": 79.24614253444265,
+      "source": "impact_area",
       "evidence": {
-        "mean_pixel_delta": 29.159279652192023
+        "mean_pixel_delta": 79.24614253444265,
+        "segment_start_s": 24.75,
+        "segment_end_s": 24.75,
+        "duration_s": 0.0,
+        "observations": 1.0
       }
     },
     {
-      "timestamp_s": 24.75,
+      "timestamp_s": 24.833333333333332,
+      "event": "blue_ring_state",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.6875185816976841,
+        "arena_y": 0.5605699854200793
+      }
+    },
+    {
+      "timestamp_s": 24.916666666666664,
       "event": "summon_or_secret_visual_change",
-      "score": 34.44675658317277,
+      "score": 53.880611753371866,
       "source": "summon_or_secret",
       "evidence": {
-        "mean_pixel_delta": 34.44675658317277
+        "mean_pixel_delta": 53.880611753371866,
+        "segment_start_s": 24.75,
+        "segment_end_s": 25.083333333333332,
+        "duration_s": 0.33333333333333215,
+        "observations": 3.0
       }
     },
     {
-      "timestamp_s": 24.75,
-      "event": "impact_or_damage_flash",
-      "score": 75.32397510735373,
-      "source": "impact_area",
-      "evidence": {
-        "mean_pixel_delta": 75.32397510735373
-      }
-    },
-    {
-      "timestamp_s": 25.0,
-      "event": "skill_1_visual_change",
-      "score": 41.63176871810892,
-      "source": "skill_1",
-      "evidence": {
-        "mean_pixel_delta": 41.63176871810892
-      }
-    },
-    {
-      "timestamp_s": 25.0,
-      "event": "substitution_visual_change",
-      "score": 61.61190513381235,
-      "source": "substitution",
-      "evidence": {
-        "mean_pixel_delta": 61.61190513381235
-      }
-    },
-    {
-      "timestamp_s": 25.0,
-      "event": "blue_ring_candidate",
-      "score": 1.0,
-      "source": "arena",
-      "evidence": {
-        "arena_x": 0.7626398175076757,
-        "arena_y": 0.4682839745656859
-      }
-    },
-    {
-      "timestamp_s": 25.0,
-      "event": "red_ring_candidate",
+      "timestamp_s": 25.083333333333332,
+      "event": "red_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
@@ -1493,247 +972,185 @@
       }
     },
     {
-      "timestamp_s": 25.25,
+      "timestamp_s": 25.083333333333336,
       "event": "substitution_visual_change",
-      "score": 46.853860772675205,
+      "score": 80.53377850671666,
       "source": "substitution",
       "evidence": {
-        "mean_pixel_delta": 46.853860772675205
-      }
-    },
-    {
-      "timestamp_s": 25.25,
-      "event": "impact_or_damage_flash",
-      "score": 40.09807825639649,
-      "source": "impact_area",
-      "evidence": {
-        "mean_pixel_delta": 40.09807825639649
+        "mean_pixel_delta": 80.53377850671666,
+        "segment_start_s": 24.916666666666668,
+        "segment_end_s": 25.25,
+        "duration_s": 0.33333333333333215,
+        "observations": 4.0
       }
     },
     {
       "timestamp_s": 25.5,
-      "event": "skill_1_visual_change",
-      "score": 36.78062844944288,
-      "source": "skill_1",
+      "event": "blue_ring_state",
+      "score": 1.0,
+      "source": "arena",
       "evidence": {
-        "mean_pixel_delta": 36.78062844944288
-      }
-    },
-    {
-      "timestamp_s": 25.5,
-      "event": "impact_or_damage_flash",
-      "score": 50.07559268205404,
-      "source": "impact_area",
-      "evidence": {
-        "mean_pixel_delta": 50.07559268205404
+        "arena_x": 0.6249108096917112,
+        "arena_y": 0.43215264255844305
       }
     },
     {
       "timestamp_s": 25.75,
+      "event": "red_ring_state",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.5586979802792355,
+        "arena_y": 0.5594018255301597
+      }
+    },
+    {
+      "timestamp_s": 26.166666666666668,
+      "event": "blue_ring_state",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.6090743004990135,
+        "arena_y": 0.635005593235712
+      }
+    },
+    {
+      "timestamp_s": 26.75,
+      "event": "red_ring_state",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.6338690483152244,
+        "arena_y": 0.564742055037499
+      }
+    },
+    {
+      "timestamp_s": 26.833333333333332,
+      "event": "blue_ring_state",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.56348036933232,
+        "arena_y": 0.5560466672970592
+      }
+    },
+    {
+      "timestamp_s": 27.5,
+      "event": "blue_ring_state",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.7505292792792793,
+        "arena_y": 0.7187724257500377
+      }
+    },
+    {
+      "timestamp_s": 27.916666666666668,
+      "event": "red_ring_state",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.7414682020034323,
+        "arena_y": 0.5813803610672923
+      }
+    },
+    {
+      "timestamp_s": 27.958333333333336,
+      "event": "impact_or_damage_flash",
+      "score": 46.303471103954195,
+      "source": "impact_area",
+      "evidence": {
+        "mean_pixel_delta": 46.303471103954195,
+        "segment_start_s": 27.916666666666668,
+        "segment_end_s": 28.0,
+        "duration_s": 0.08333333333333215,
+        "observations": 2.0
+      }
+    },
+    {
+      "timestamp_s": 28.166666666666668,
+      "event": "blue_ring_state",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.5541948959719302,
+        "arena_y": 0.5772432543647349
+      }
+    },
+    {
+      "timestamp_s": 28.583333333333332,
+      "event": "red_ring_state",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.5916007487697164,
+        "arena_y": 0.5877123495688045
+      }
+    },
+    {
+      "timestamp_s": 28.833333333333332,
+      "event": "blue_ring_state",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.6614597779683459,
+        "arena_y": 0.6116613925543574
+      }
+    },
+    {
+      "timestamp_s": 28.875,
+      "event": "impact_or_damage_flash",
+      "score": 54.32988739040973,
+      "source": "impact_area",
+      "evidence": {
+        "mean_pixel_delta": 54.32988739040973,
+        "segment_start_s": 28.833333333333332,
+        "segment_end_s": 28.916666666666668,
+        "duration_s": 0.0833333333333357,
+        "observations": 2.0
+      }
+    },
+    {
+      "timestamp_s": 28.916666666666664,
       "event": "skill_1_visual_change",
-      "score": 28.317550505050505,
+      "score": 57.38795168176611,
       "source": "skill_1",
       "evidence": {
-        "mean_pixel_delta": 28.317550505050505
-      }
-    },
-    {
-      "timestamp_s": 26.0,
-      "event": "blue_ring_candidate",
-      "score": 1.0,
-      "source": "arena",
-      "evidence": {
-        "arena_x": 0.5887680319839013,
-        "arena_y": 0.6338023741410038
-      }
-    },
-    {
-      "timestamp_s": 26.0,
-      "event": "red_ring_candidate",
-      "score": 1.0,
-      "source": "arena",
-      "evidence": {
-        "arena_x": 0.600568572649744,
-        "arena_y": 0.5441932443047918
-      }
-    },
-    {
-      "timestamp_s": 27.0,
-      "event": "blue_ring_candidate",
-      "score": 1.0,
-      "source": "arena",
-      "evidence": {
-        "arena_x": 0.6446626463092499,
-        "arena_y": 0.6577995148932894
-      }
-    },
-    {
-      "timestamp_s": 27.0,
-      "event": "red_ring_candidate",
-      "score": 1.0,
-      "source": "arena",
-      "evidence": {
-        "arena_x": 0.6052204269313103,
-        "arena_y": 0.5594194284275564
-      }
-    },
-    {
-      "timestamp_s": 28.0,
-      "event": "blue_ring_candidate",
-      "score": 1.0,
-      "source": "arena",
-      "evidence": {
-        "arena_x": 0.5461556333377547,
-        "arena_y": 0.5825144771718536
-      }
-    },
-    {
-      "timestamp_s": 28.0,
-      "event": "red_ring_candidate",
-      "score": 1.0,
-      "source": "arena",
-      "evidence": {
-        "arena_x": 0.7355802840562197,
-        "arena_y": 0.572695086833685
-      }
-    },
-    {
-      "timestamp_s": 28.0,
-      "event": "impact_or_damage_flash",
-      "score": 62.091508990874935,
-      "source": "impact_area",
-      "evidence": {
-        "mean_pixel_delta": 62.091508990874935
-      }
-    },
-    {
-      "timestamp_s": 28.25,
-      "event": "impact_or_damage_flash",
-      "score": 37.27285124798712,
-      "source": "impact_area",
-      "evidence": {
-        "mean_pixel_delta": 37.27285124798712
-      }
-    },
-    {
-      "timestamp_s": 28.5,
-      "event": "impact_or_damage_flash",
-      "score": 44.35240651279299,
-      "source": "impact_area",
-      "evidence": {
-        "mean_pixel_delta": 44.35240651279299
-      }
-    },
-    {
-      "timestamp_s": 28.75,
-      "event": "skill_1_visual_change",
-      "score": 57.058022232635636,
-      "source": "skill_1",
-      "evidence": {
-        "mean_pixel_delta": 57.058022232635636
-      }
-    },
-    {
-      "timestamp_s": 28.75,
-      "event": "skill_2_visual_change",
-      "score": 30.8409891598916,
-      "source": "skill_2",
-      "evidence": {
-        "mean_pixel_delta": 30.8409891598916
-      }
-    },
-    {
-      "timestamp_s": 28.75,
-      "event": "impact_or_damage_flash",
-      "score": 52.34864745482197,
-      "source": "impact_area",
-      "evidence": {
-        "mean_pixel_delta": 52.34864745482197
-      }
-    },
-    {
-      "timestamp_s": 29.0,
-      "event": "skill_1_visual_change",
-      "score": 34.358631417265435,
-      "source": "skill_1",
-      "evidence": {
-        "mean_pixel_delta": 34.358631417265435
-      }
-    },
-    {
-      "timestamp_s": 29.0,
-      "event": "skill_2_visual_change",
-      "score": 29.741272480906627,
-      "source": "skill_2",
-      "evidence": {
-        "mean_pixel_delta": 29.741272480906627
-      }
-    },
-    {
-      "timestamp_s": 29.0,
-      "event": "blue_ring_candidate",
-      "score": 1.0,
-      "source": "arena",
-      "evidence": {
-        "arena_x": 0.5832704866490067,
-        "arena_y": 0.5724317893463094
-      }
-    },
-    {
-      "timestamp_s": 29.0,
-      "event": "red_ring_candidate",
-      "score": 1.0,
-      "source": "arena",
-      "evidence": {
-        "arena_x": 0.4135656680446443,
-        "arena_y": 0.6877155963024609
-      }
-    },
-    {
-      "timestamp_s": 29.0,
-      "event": "impact_or_damage_flash",
-      "score": 41.36890935319377,
-      "source": "impact_area",
-      "evidence": {
-        "mean_pixel_delta": 41.36890935319377
+        "mean_pixel_delta": 57.38795168176611,
+        "segment_start_s": 28.833333333333332,
+        "segment_end_s": 29.0,
+        "duration_s": 0.16666666666666785,
+        "observations": 3.0
       }
     },
     {
       "timestamp_s": 29.25,
-      "event": "impact_or_damage_flash",
-      "score": 41.70091977545178,
-      "source": "impact_area",
-      "evidence": {
-        "mean_pixel_delta": 41.70091977545178
-      }
-    },
-    {
-      "timestamp_s": 29.5,
-      "event": "impact_or_damage_flash",
-      "score": 36.517490830202185,
-      "source": "impact_area",
-      "evidence": {
-        "mean_pixel_delta": 36.517490830202185
-      }
-    },
-    {
-      "timestamp_s": 30.0,
-      "event": "blue_ring_candidate",
+      "event": "red_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.7985422976000865,
-        "arena_y": 0.6346478467156483
+        "arena_x": 0.33188943579967733,
+        "arena_y": 0.6983909495056732
       }
     },
     {
-      "timestamp_s": 30.0,
-      "event": "red_ring_candidate",
+      "timestamp_s": 29.583333333333332,
+      "event": "blue_ring_state",
       "score": 1.0,
       "source": "arena",
       "evidence": {
-        "arena_x": 0.5274138714024372,
-        "arena_y": 0.6265386550394096
+        "arena_x": 0.7388359406766107,
+        "arena_y": 0.6021518818063946
+      }
+    },
+    {
+      "timestamp_s": 29.916666666666668,
+      "event": "red_ring_state",
+      "score": 1.0,
+      "source": "arena",
+      "evidence": {
+        "arena_x": 0.5374470263723495,
+        "arena_y": 0.6227121316087034
       }
     }
   ],
