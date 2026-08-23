@@ -48,6 +48,22 @@ come from owner-supplied or expressly authorized recordings.
 report and review state. It deliberately leaves character identity and match
 outcome as `unknown` until a reviewer verifies them from the replay.
 
+## Single-character coaching
+
+The first reference profile is `urashiki_astro_fisher`. It turns a candidate
+report into human-readable suggestions for neutral spacing, hook confirmation,
+1A–4A continuation, the post-attack joystick-down attribute branch, damage
+confirmation, substitute mind games, and safe finishing. Run it with:
+
+```bash
+PYTHONPATH=src python3 -m naruto_video_analyzer coach \
+  report-2097.json --output coach-2097.json
+```
+
+This is a replay coach, not an input generator. Its confidence and evidence
+fields make the suggestions auditable and keep uncertain visual detections from
+being treated as ground truth.
+
 ## Calibration workflow
 
 1. Run `analyze` to generate a candidate report.
