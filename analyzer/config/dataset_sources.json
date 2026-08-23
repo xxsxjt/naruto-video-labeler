@@ -1,0 +1,34 @@
+{
+  "schema_version": "0.1",
+  "policy": {
+    "training_media": "Only use recordings owned by the project owner or explicitly supplied/authorized by their creator.",
+    "public_media": "Public platform videos are reference material unless the creator explicitly authorizes ingestion.",
+    "personal_data": "Remove player names, chat overlays, device identifiers, and share-session parameters before publishing metadata."
+  },
+  "sources": [
+    {
+      "id": "local_user_recordings",
+      "kind": "training_media",
+      "status": "approved",
+      "purpose": ["event labels", "evaluation", "UI calibration"],
+      "notes": "Project-owner supplied recordings. Keep raw files outside public source control unless separately approved."
+    },
+    {
+      "id": "official_competition_reference",
+      "kind": "reference_media",
+      "status": "reference_only",
+      "purpose": ["high-level tactics", "opponent-model taxonomy"],
+      "urls": [
+        "https://www.bilibili.com/video/BV17V5iznEzV/",
+        "https://www.huya.com/video/play/1067107024.html"
+      ]
+    },
+    {
+      "id": "urashiki_tutorial_reference",
+      "kind": "reference_media",
+      "status": "reference_only",
+      "purpose": ["character knowledge cards", "review rules"],
+      "urls": ["https://www.bilibili.com/video/BV1jjbe6hENc/"]
+    }
+  ]
+}
