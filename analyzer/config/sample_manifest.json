@@ -1,0 +1,12 @@
+{
+  "schema_version": "0.1",
+  "purpose": "Offline replay-analysis sample registry. Character identity and outcome remain unknown until a reviewer confirms them.",
+  "samples": [
+    {"id": "20789", "video_filename": "20789.mp4", "report_filename": "report-20789.json", "source_id": "local_user_recordings", "rights": "project-owner-provided", "review_status": "unreviewed"},
+    {"id": "20143", "video_filename": "20143.mp4", "report_filename": "report-20143.json", "source_id": "local_user_recordings", "rights": "project-owner-provided", "review_status": "unreviewed"},
+    {"id": "2097", "video_filename": "2097.mp4", "report_filename": "report-2097.json", "source_id": "local_user_recordings", "rights": "project-owner-provided", "review_status": "unreviewed"},
+    {"id": "2514", "video_filename": "2514.mp4", "report_filename": "report-2514.json", "source_id": "local_user_recordings", "rights": "project-owner-provided", "review_status": "unreviewed"},
+    {"id": "2636", "video_filename": "2636.mp4", "report_filename": "report-2636.json", "source_id": "local_user_recordings", "rights": "project-owner-provided", "review_status": "unreviewed"},
+    {"id": "2096", "video_filename": "2096.mp4", "report_filename": "report-2096.json", "source_id": "local_user_recordings", "rights": "project-owner-provided", "review_status": "unreviewed"}
+  ]
+}
