@@ -48,6 +48,17 @@
         "https://www.huya.com/video/play/1048239408.html"
       ],
       "notes": "赛事/高手对局仅用于建立战术词表和复盘规则；未获得创作者授权前不下载、不再发布。"
+    },
+    {
+      "id": "kakashi_susanoo_reference",
+      "kind": "reference_media",
+      "status": "reference_only",
+      "purpose": ["普攻分支", "神威状态机", "虚化/完美时机", "奥义收尾"],
+      "urls": [
+        "https://game.xiaomi.com/viewpoint/1214995289_1736012854211_16",
+        "https://www.easck.net/handbook/2025/04-12/854583.shtml"
+      ],
+      "notes": "须佐卡卡西技能与连招机制参考；实际版本、帧数和判定仍需通过授权录像审核。"
     }
   ]
 }
