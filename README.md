@@ -50,19 +50,25 @@ outcome as `unknown` until a reviewer verifies them from the replay.
 
 ## Single-character coaching
 
-The first reference profile is `urashiki_astro_fisher`. It turns a candidate
-report into human-readable suggestions for neutral spacing, hook confirmation,
-1A–4A continuation, the post-attack joystick-down attribute branch, damage
-confirmation, substitute mind games, and safe finishing. Run it with:
+The first reference profile is `urashiki_astro_fisher`. The second is
+`kakashi_susanoo`. They turn a candidate report into human-readable suggestions
+for neutral spacing, character-specific attack branches, damage confirmation,
+substitute mind games, and safe finishing. Run either with:
 
 ```bash
 PYTHONPATH=src python3 -m naruto_video_analyzer coach \
   report-2097.json --output coach-2097.json
+
+PYTHONPATH=src python3 -m naruto_video_analyzer coach \
+  report-2097.json --character kakashi_susanoo --output coach-2097-kakashi.json
 ```
 
-This is a replay coach, not an input generator. Its confidence and evidence
-fields make the suggestions auditable and keep uncertain visual detections from
-being treated as ground truth.
+The浦式 profile covers hook confirmation, 1A–4A continuation and the post-attack
+joystick-down attribute branch. The卡卡西 profile covers normal/up/down special
+attacks, 雷兽/雷传, 神威·左/右, virtual invulnerability, perfect timing, and
+奥义·神威雷切. These are replay coaches, not input generators. Confidence and
+evidence fields make the suggestions auditable and keep uncertain visual
+detections from being treated as ground truth.
 
 ## Calibration workflow
 
