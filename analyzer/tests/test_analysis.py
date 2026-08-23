@@ -60,3 +60,17 @@ class TimelineAnalyzerTests(unittest.TestCase):
         advice = " ".join(item["advice"] for item in coaching["recommendations"])
         self.assertIn("下拉摇杆", advice)
         self.assertIn("血条", advice)
+
+    def test_kakashi_coach_distinguishes_invulnerability_and_special_attacks(self):
+        report = {"video": {"filename": "sample.mp4"}, "events": [
+            {"timestamp_s": 0.0, "event": "red_ring_state", "source": "arena", "score": 0.8},
+            {"timestamp_s": 0.7, "event": "attack_visual_change", "source": "attack", "score": 44},
+            {"timestamp_s": 1.2, "event": "skill_2_visual_change", "source": "skill_2", "score": 60},
+            {"timestamp_s": 1.8, "event": "impact_or_damage_flash", "source": "impact_area", "score": 70},
+            {"timestamp_s": 2.5, "event": "health_bar_change", "source": "enemy_health", "score": 24},
+        ]}
+        coaching = build_coaching_report(report, character="kakashi_susanoo")
+        self.assertEqual("kakashi_susanoo", coaching["character"]["id"])
+        advice = " ".join(item["advice"] for item in coaching["recommendations"])
+        self.assertIn("虚化", advice)
+        self.assertIn("奥义", advice)
