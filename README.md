@@ -1,27 +1,83 @@
-# Naruto Video Labeler
+# Naruto Mobile Video Analyzer
 
-离线录像复盘与标注工具，面向《火影忍者手游》的练习录像和赛后分析。
+Offline video-analysis MVP for **Naruto Mobile** practice or replay recordings.
 
-- 直接在网页中播放六段已授权样本，并审核候选片段；
-- 将摇杆、按钮、受击/伤害闪光、血条和蓝/红环位置作为**待审核视觉信号**；
-- 不连接游戏客户端，不生成或发送游戏控制。
+It never connects to a game client and cannot send controls. It reads an MP4 and
+produces a reviewable JSON timeline from visual signals:
 
-## 在线标注页
+- motion in the joystick and skill-button regions;
+- blue/red ring candidates in the arena;
+- health-bar change signals;
+- central damage / impact flashes.
 
-[打开标注页](https://xxsxjt.github.io/naruto-video-labeler/)
+The detector deliberately returns evidence and confidence instead of pretending
+to know an exact game action. It merges adjacent visual changes into compact
+review segments, suppressing most single-frame button flickers. The next step is
+to calibrate the regions against more recordings, then label a small evaluation
+set before adding OCR or a video model.
 
-## 分析器源码
+## Quick start
 
-Python 离线分析器在 [analyzer/](analyzer/)：
+```bash
+cd naruto-video-analyzer
+PYTHONPATH=src python3 -m naruto_video_analyzer analyze \
+  ../upload/20789.mp4 --sample-fps 12 --output report-20789.json
+```
 
-~~~bash
-cd analyzer
-PYTHONPATH=src python3 -m unittest discover -s tests -v
+The built-in implementation uses only Python, NumPy, and `ffmpeg`/`ffprobe`.
+Optional OCR and a video model are intentionally out of the critical path.
+
+## JSON output
+
+`events` contains candidate segments such as `skill_1_visual_change`,
+`joystick_visual_change`, `impact_or_damage_flash`, and `health_bar_change`.
+Each has a timestamp, source region, score, and evidence values including
+segment start/end, duration, and observation count. Ring updates are sparse
+state observations rather than repeated events. The first
+default layout is calibrated for the supplied landscape training recordings;
+different aspect ratios should use their own region config.
+
+## Data sources
+
+`config/dataset_sources.json` records the approved data policy and current
+source categories. Public tutorials and tournament VODs are reference material
+only unless their creator explicitly authorizes ingestion. Training media should
+come from owner-supplied or expressly authorized recordings.
+
+`config/sample_manifest.json` ties each owner-provided sample to its generated
+report and review state. It deliberately leaves character identity and match
+outcome as `unknown` until a reviewer verifies them from the replay.
+
+## Single-character coaching
+
+The first reference profile is `urashiki_astro_fisher`. It turns a candidate
+report into human-readable suggestions for neutral spacing, hook confirmation,
+1A–4A continuation, the post-attack joystick-down attribute branch, damage
+confirmation, substitute mind games, and safe finishing. Run it with:
+
+```bash
+PYTHONPATH=src python3 -m naruto_video_analyzer coach \
+  report-2097.json --output coach-2097.json
+```
+
+This is a replay coach, not an input generator. Its confidence and evidence
+fields make the suggestions auditable and keep uncertain visual detections from
+being treated as ground truth.
+
+## Calibration workflow
+
+1. Run `analyze` to generate a candidate report.
+2. Open the project’s static review page or `web/annotator.html`, then load the
+   recording and its report JSON. Confirm or reject only the candidates; export
+   the labels.
+3. Adjust normalized regions in `config/default_ui.json` if a phone layout differs.
+4. Collect labels for 20–50 short clips using `event_schema.json`.
+5. Measure precision/recall for each event before adding OCR or an optional
+   video-language model as a *review assistant*.
+
+## Commands
+
+```bash
+PYTHONPATH=src python3 -m naruto_video_analyzer inspect input.mp4 --output contact.jpg
 PYTHONPATH=src python3 -m naruto_video_analyzer analyze input.mp4 --output report.json
-~~~
-
-新版报告会将相邻画面变化去抖合并为一个连续候选片段，并保留起止时间、持续时长和观察次数。位置环按频率限制记录，避免特效抖动产生大量冗余条目。
-
-## 数据边界
-
-只把项目所有者提供或创作者明确授权的录像用于训练与评估。公开教程和赛事视频仅作为规则与战术参考，除非获得额外授权。
+```
