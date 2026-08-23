@@ -3,6 +3,7 @@ import unittest
 import numpy as np
 
 from naruto_video_analyzer.analysis import TimelineAnalyzer
+from naruto_video_analyzer.coach import build_coaching_report
 from naruto_video_analyzer.regions import parse_regions
 
 
@@ -44,3 +45,18 @@ class TimelineAnalyzerTests(unittest.TestCase):
         frame[40:50, 40:50] = [20, 100, 240]
         events = analyzer.process(0.0, frame)
         self.assertIn("blue_ring_state", [event.event for event in events])
+
+    def test_urashiki_coach_turns_visual_candidates_into_review_advice(self):
+        report = {"video": {"filename": "sample.mp4"}, "events": [
+            {"timestamp_s": 0.0, "event": "red_ring_state", "source": "arena", "score": 0.8},
+            {"timestamp_s": 1.0, "event": "skill_1_visual_change", "source": "skill_1", "score": 55},
+            {"timestamp_s": 1.3, "event": "attack_visual_change", "source": "attack", "score": 44},
+            {"timestamp_s": 1.4, "event": "impact_or_damage_flash", "source": "impact_area", "score": 60},
+            {"timestamp_s": 2.0, "event": "health_bar_change", "source": "enemy_health", "score": 22},
+        ]}
+        coaching = build_coaching_report(report)
+        self.assertEqual("offline_tactical_coach", coaching["mode"])
+        self.assertGreaterEqual(coaching["recommendation_count"], 4)
+        advice = " ".join(item["advice"] for item in coaching["recommendations"])
+        self.assertIn("下拉摇杆", advice)
+        self.assertIn("血条", advice)
