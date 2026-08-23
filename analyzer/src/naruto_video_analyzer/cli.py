@@ -6,6 +6,7 @@ import subprocess
 from pathlib import Path
 
 from .analysis import TimelineAnalyzer, summarize
+from .coach import build_coaching_report
 from .regions import parse_regions
 from .video import frames, probe
 
@@ -42,6 +43,14 @@ def inspect(args: argparse.Namespace) -> int:
     return 0
 
 
+def coach(args: argparse.Namespace) -> int:
+    report = json.loads(Path(args.report).read_text(encoding="utf-8"))
+    coaching = build_coaching_report(report, character=args.character)
+    Path(args.output).write_text(json.dumps(coaching, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"wrote {coaching['recommendation_count']} coaching recommendations to {args.output}")
+    return 0
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Offline visual event extraction for Naruto Mobile recordings")
     subcommands = parser.add_subparsers(dest="command", required=True)
@@ -58,5 +67,10 @@ def main() -> int:
     inspect_parser.add_argument("--seconds", type=float, default=3.0)
     inspect_parser.add_argument("--width", type=int, default=800)
     inspect_parser.set_defaults(func=inspect)
+    coach_parser = subcommands.add_parser("coach", help="generate offline tactical review suggestions")
+    coach_parser.add_argument("report")
+    coach_parser.add_argument("--output", required=True)
+    coach_parser.add_argument("--character", default="urashiki_astro_fisher")
+    coach_parser.set_defaults(func=coach)
     args = parser.parse_args()
     return args.func(args)
