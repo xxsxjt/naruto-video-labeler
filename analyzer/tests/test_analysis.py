@@ -47,7 +47,7 @@ class TimelineAnalyzerTests(unittest.TestCase):
         self.assertIn("blue_ring_state", [event.event for event in events])
 
     def test_urashiki_coach_turns_visual_candidates_into_review_advice(self):
-        report = {"video": {"filename": "sample.mp4"}, "events": [
+        report = {"video": {"filename": "sample.mp4"}, "character_id": "urashiki_astro_fisher", "character_assignment": "human_confirmed", "events": [
             {"timestamp_s": 0.0, "event": "red_ring_state", "source": "arena", "score": 0.8},
             {"timestamp_s": 1.0, "event": "skill_1_visual_change", "source": "skill_1", "score": 55},
             {"timestamp_s": 1.3, "event": "attack_visual_change", "source": "attack", "score": 44},
@@ -62,7 +62,7 @@ class TimelineAnalyzerTests(unittest.TestCase):
         self.assertIn("血条", advice)
 
     def test_kakashi_coach_distinguishes_invulnerability_and_special_attacks(self):
-        report = {"video": {"filename": "sample.mp4"}, "events": [
+        report = {"video": {"filename": "sample.mp4"}, "character_id": "kakashi_susanoo", "character_assignment": "human_confirmed", "events": [
             {"timestamp_s": 0.0, "event": "red_ring_state", "source": "arena", "score": 0.8},
             {"timestamp_s": 0.7, "event": "attack_visual_change", "source": "attack", "score": 44},
             {"timestamp_s": 1.2, "event": "skill_2_visual_change", "source": "skill_2", "score": 60},
@@ -74,3 +74,7 @@ class TimelineAnalyzerTests(unittest.TestCase):
         advice = " ".join(item["advice"] for item in coaching["recommendations"])
         self.assertIn("虚化", advice)
         self.assertIn("奥义", advice)
+
+    def test_unconfirmed_character_cannot_generate_coaching_report(self):
+        with self.assertRaises(ValueError):
+            build_coaching_report({"events": []}, character="urashiki_astro_fisher")
