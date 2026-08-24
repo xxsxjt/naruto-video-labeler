@@ -6,6 +6,8 @@
     "fps": 29.97002997002997,
     "duration_s": 30.253444
   },
+  "character_id": null,
+  "character_assignment": "unconfirmed",
   "sample_fps": 12.0,
   "event_counts": {
     "blue_ring_state": 43,
