@@ -45,8 +45,8 @@ only unless their creator explicitly authorizes ingestion. Training media should
 come from owner-supplied or expressly authorized recordings.
 
 `config/sample_manifest.json` ties each owner-provided sample to its generated
-report and review state. It deliberately leaves character identity and match
-outcome as `unknown` until a reviewer verifies them from the replay.
+report and review state. The current six samples intentionally have no
+`character_id`; they are not assigned to either浦式 or卡卡西.
 
 ## Single-character coaching
 
@@ -56,17 +56,29 @@ for neutral spacing, character-specific attack branches, damage confirmation,
 substitute mind games, and safe finishing. Run either with:
 
 ```bash
-PYTHONPATH=src python3 -m naruto_video_analyzer coach \
-  report-2097.json --output coach-2097.json
+PYTHONPATH=src python3 -m naruto_video_analyzer assign-character \
+  report-2097.json --character urashiki_astro_fisher \
+  --output report-2097-urashiki.json
 
 PYTHONPATH=src python3 -m naruto_video_analyzer coach \
-  report-2097.json --character kakashi_susanoo --output coach-2097-kakashi.json
+  report-2097-urashiki.json --character urashiki_astro_fisher \
+  --output coach-2097-urashiki.json
+
+PYTHONPATH=src python3 -m naruto_video_analyzer assign-character \
+  report-2097.json --character kakashi_susanoo \
+  --output report-2097-kakashi.json
+
+PYTHONPATH=src python3 -m naruto_video_analyzer coach \
+  report-2097-kakashi.json --character kakashi_susanoo \
+  --output coach-2097-kakashi.json
 ```
 
 The浦式 profile covers hook confirmation, 1A–4A continuation and the post-attack
 joystick-down attribute branch. The卡卡西 profile covers normal/up/down special
 attacks, 雷兽/雷传, 神威·左/右, virtual invulnerability, perfect timing, and
-奥义·神威雷切. These are replay coaches, not input generators. Confidence and
+奥义·神威雷切. These are replay coaches, not input generators. A report without
+a human character assignment is rejected, so an unknown sample cannot be
+accidentally presented as a浦式 or卡卡西 demonstration. Confidence and
 evidence fields make the suggestions auditable and keep uncertain visual
 detections from being treated as ground truth.
 
