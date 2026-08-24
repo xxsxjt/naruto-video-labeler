@@ -26,6 +26,8 @@ def analyze(args: argparse.Namespace) -> int:
     events.sort(key=lambda event: event.timestamp_s)
     report = {
         "video": {"filename": info.path.name, "width": info.width, "height": info.height, "fps": info.fps, "duration_s": info.duration_s},
+        "character_id": None,
+        "character_assignment": "unconfirmed",
         "sample_fps": args.sample_fps,
         "event_counts": summarize(events),
         "events": [event.json() for event in events],
@@ -45,9 +47,21 @@ def inspect(args: argparse.Namespace) -> int:
 
 def coach(args: argparse.Namespace) -> int:
     report = json.loads(Path(args.report).read_text(encoding="utf-8"))
+    if report.get("character_id") != args.character or report.get("character_assignment") != "human_confirmed":
+        raise SystemExit("refusing to coach an unconfirmed sample; assign the character from a reviewed recording first")
     coaching = build_coaching_report(report, character=args.character)
     Path(args.output).write_text(json.dumps(coaching, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"wrote {coaching['recommendation_count']} coaching recommendations to {args.output}")
+    return 0
+
+
+def assign_character(args: argparse.Namespace) -> int:
+    report = json.loads(Path(args.report).read_text(encoding="utf-8"))
+    report["character_id"] = args.character
+    report["character_assignment"] = "human_confirmed"
+    report["assignment_note"] = "Character identity was explicitly confirmed by a reviewer; visual candidates remain unconfirmed."
+    Path(args.output).write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"wrote character assignment {args.character} to {args.output}")
     return 0
 
 
@@ -72,5 +86,10 @@ def main() -> int:
     coach_parser.add_argument("--output", required=True)
     coach_parser.add_argument("--character", default="urashiki_astro_fisher")
     coach_parser.set_defaults(func=coach)
+    assign_parser = subcommands.add_parser("assign-character", help="record a human-confirmed character assignment")
+    assign_parser.add_argument("report")
+    assign_parser.add_argument("--character", required=True)
+    assign_parser.add_argument("--output", required=True)
+    assign_parser.set_defaults(func=assign_character)
     args = parser.parse_args()
     return args.func(args)
