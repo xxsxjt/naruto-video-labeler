@@ -1,4 +1,6 @@
 {
+  "report_kind": "candidate_visual_timeline",
+  "label_status": "unreviewed",
   "video": {
     "filename": "2096.mp4",
     "width": 1280,
@@ -1329,6 +1331,7 @@
       }
     }
   ],
+  "ground_truth_labels": [],
   "notes": [
     "Candidate events require human review.",
     "The tool is offline analysis only and does not generate game controls."
