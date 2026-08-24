@@ -370,6 +370,8 @@ def _coach_kakashi_events(ordered: list[dict[str, Any]]) -> list[Recommendation]
 
 
 def build_coaching_report(report: dict[str, Any], *, character: str = "urashiki_astro_fisher") -> dict[str, Any]:
+    if report.get("character_id") != character or report.get("character_assignment") != "human_confirmed":
+        raise ValueError("character identity must be human-confirmed before coaching")
     recommendations = coach_events(report.get("events", []), character=character)
     return {
         "schema_version": "0.1",
