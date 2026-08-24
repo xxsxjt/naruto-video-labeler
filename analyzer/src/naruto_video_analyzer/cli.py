@@ -25,12 +25,15 @@ def analyze(args: argparse.Namespace) -> int:
     events.extend(analyzer.finalize())
     events.sort(key=lambda event: event.timestamp_s)
     report = {
+        "report_kind": "candidate_visual_timeline",
+        "label_status": "unreviewed",
         "video": {"filename": info.path.name, "width": info.width, "height": info.height, "fps": info.fps, "duration_s": info.duration_s},
         "character_id": None,
         "character_assignment": "unconfirmed",
         "sample_fps": args.sample_fps,
         "event_counts": summarize(events),
         "events": [event.json() for event in events],
+        "ground_truth_labels": [],
         "notes": ["Candidate events require human review.", "The tool is offline analysis only and does not generate game controls."],
     }
     Path(args.output).write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
