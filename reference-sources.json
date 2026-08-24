@@ -1,0 +1,64 @@
+{
+  "schema_version": "0.1",
+  "policy": {
+    "training_media": "Only use recordings owned by the project owner or explicitly supplied/authorized by their creator.",
+    "public_media": "Public platform videos are reference material unless the creator explicitly authorizes ingestion.",
+    "personal_data": "Remove player names, chat overlays, device identifiers, and share-session parameters before publishing metadata."
+  },
+  "sources": [
+    {
+      "id": "local_user_recordings",
+      "kind": "training_media",
+      "status": "approved",
+      "purpose": ["event labels", "evaluation", "UI calibration"],
+      "notes": "Project-owner supplied recordings. Keep raw files outside public source control unless separately approved."
+    },
+    {
+      "id": "official_competition_reference",
+      "kind": "reference_media",
+      "status": "reference_only",
+      "purpose": ["high-level tactics", "opponent-model taxonomy"],
+      "urls": [
+        "https://www.bilibili.com/video/BV17V5iznEzV/",
+        "https://www.huya.com/video/play/1067107024.html"
+      ]
+    },
+    {
+      "id": "urashiki_tutorial_reference",
+      "kind": "reference_media",
+      "status": "reference_only",
+      "purpose": ["character knowledge cards", "review rules"],
+      "urls": [
+        "https://www.bilibili.com/video/BV1jjbe6hENc/",
+        "https://www.bilibili.com/video/BV1vnVN63E19/",
+        "https://www.bilibili.com/video/BV1nVVT69EEr/",
+        "https://game.xiaomi.com/viewpoint/1214995289_1779864501299_16"
+      ],
+      "notes": "浦式技能与机制参考；公开页面可能对应不同版本，必须由审核者确认，不能直接当作训练标签。"
+    },
+    {
+      "id": "competitive_replay_reference",
+      "kind": "reference_media",
+      "status": "reference_only",
+      "purpose": ["中立博弈", "替身管理", "距离与起手复盘"],
+      "urls": [
+        "https://www.bilibili.com/video/BV17V5iznEzV/",
+        "https://www.bilibili.com/video/BV1xx4y1b7Ma/",
+        "https://www.huya.com/video/play/1068481892.html",
+        "https://www.huya.com/video/play/1048239408.html"
+      ],
+      "notes": "赛事/高手对局仅用于建立战术词表和复盘规则；未获得创作者授权前不下载、不再发布。"
+    },
+    {
+      "id": "kakashi_susanoo_reference",
+      "kind": "reference_media",
+      "status": "reference_only",
+      "purpose": ["普攻分支", "神威状态机", "虚化/完美时机", "奥义收尾"],
+      "urls": [
+        "https://game.xiaomi.com/viewpoint/1214995289_1736012854211_16",
+        "https://www.easck.net/handbook/2025/04-12/854583.shtml"
+      ],
+      "notes": "须佐卡卡西技能与连招机制参考；实际版本、帧数和判定仍需通过授权录像审核。"
+    }
+  ]
+}
